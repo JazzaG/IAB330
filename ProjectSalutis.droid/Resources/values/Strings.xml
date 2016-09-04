@@ -25,5 +25,11 @@
 		<item>A month</item>
 		<item>3 months</item>
 	</string-array>
+  
+  <string-array name="journey_array">
+    <item>Happiness</item>
+    <item>Exercise</item>
+    <item>Nutrition</item>
+  </string-array>
 	
 </resources>
