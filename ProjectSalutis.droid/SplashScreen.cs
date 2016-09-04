@@ -7,7 +7,6 @@ namespace ProjectSalutis.droid
     [Activity(
         Label = "ProjectSalutis.droid"
         , MainLauncher = true
-        , Icon = "@mipmap/icon"
         , Theme = "@style/Theme.Splash"
         , NoHistory = true
         , ScreenOrientation = ScreenOrientation.Portrait)]

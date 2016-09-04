@@ -1,4 +1,29 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
 	<string name="app_name">ProjectSalutis</string>
+
+	<string-array name="goal_types">
+		<item>Bike Ride</item>
+		<item>Run / Walk / Jog</item>
+		<item>Swim</item>
+		<item>Pilates</item>
+		<item>Yoga</item>
+		<item>Exercise</item>
+	</string-array>
+
+	<string-array name="goal_frequencies">
+		<item>Every Day</item>
+		<item>Every Other Day</item>
+		<item>Every Week</item>
+		<item>Every Two Weeks</item>
+		<item>Every Month</item>
+	</string-array>
+
+	<string-array name="goal_durations">
+		<item>A week</item>
+		<item>2 weeks</item>
+		<item>A month</item>
+		<item>3 months</item>
+	</string-array>
+	
 </resources>
