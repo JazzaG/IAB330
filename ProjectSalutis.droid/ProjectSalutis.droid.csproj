@@ -76,6 +76,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\NewContactView.cs" />
     <Compile Include="Views\CreateGoal.cs" />
   </ItemGroup>
   <ItemGroup>
@@ -85,6 +86,7 @@
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\layout\NewContactView.axml" />
     <AndroidResource Include="Resources\layout\CreateGoal.axml" />
   </ItemGroup>
   <ItemGroup>
