@@ -11,7 +11,6 @@ namespace ProjectSalutis.droid.Views
 {
 	[Activity(
 		Label = "New Goal"
-		, Theme = "@android:style/Theme.Material.Light"
 		, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class CreateGoal : MvxActivity
 	{
