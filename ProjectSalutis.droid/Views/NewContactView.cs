@@ -9,10 +9,19 @@ using Android.OS;
 using Android.Runtime;
 using Android.Views;
 using Android.Widget;
+using MvvmCross.Droid.Views;
 
 namespace ProjectSalutis.droid.Views
 {
-    class NewContactView
+	[Activity(Label = "Add New Contact")]
+    class NewContactView : MvxActivity
     {
+
+		protected override void OnCreate(Bundle bundle)
+		{
+			base.OnCreate(bundle);
+			SetContentView(Resource.Layout.NewContactView);
+		}
+
     }
 }
