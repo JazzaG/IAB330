@@ -1,3 +1,4 @@
+using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 
 namespace ProjectSalutis.core.ViewModels
@@ -5,11 +6,30 @@ namespace ProjectSalutis.core.ViewModels
     public class FirstViewModel 
         : MvxViewModel
     {
-        private string _hello = "Hello MvvmCross";
-        public string Hello
-        { 
-            get { return _hello; }
-            set { SetProperty (ref _hello, value); }
-        }
+
+		public ICommand JourneyCommand
+		{
+			get
+			{
+				return new MvxCommand(() => ShowViewModel<AddtoJourneyViewModel>());
+			}
+		}
+
+		public ICommand GoalCommand
+		{
+			get
+			{
+				return new MvxCommand(() => ShowViewModel<CreateGoalViewModel>());
+			}
+		}
+
+		public ICommand ContactCommand
+		{
+			get
+			{
+				return new MvxCommand(() => ShowViewModel<NewContactViewModel>());
+			}
+		}
+
     }
 }
