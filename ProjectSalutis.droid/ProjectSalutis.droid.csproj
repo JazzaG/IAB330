@@ -78,7 +78,7 @@
     <Compile Include="Views\AddtoJourneyView.cs" />
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\NewContactView.cs" />
-    <Compile Include="Views\CreateGoal.cs" />
+    <Compile Include="Views\CreateGoalView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -88,7 +88,7 @@
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\layout\FirstView.axml" />
     <AndroidResource Include="Resources\layout\NewContactView.axml" />
-    <AndroidResource Include="Resources\layout\CreateGoal.axml" />
+    <AndroidResource Include="Resources\layout\CreateGoalView.axml" />
     <AndroidResource Include="Resources\layout\AddtoJourneyView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
