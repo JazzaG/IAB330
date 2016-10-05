@@ -79,6 +79,7 @@
     <Compile Include="Views\FirstView.cs" />
     <Compile Include="Views\NewContactView.cs" />
     <Compile Include="Views\CreateGoalView.cs" />
+    <Compile Include="Views\GoalListView.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
@@ -92,6 +93,7 @@
     <AndroidResource Include="Resources\layout\AddtoJourneyView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
+    <AndroidResource Include="Resources\layout\GoalListView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
