@@ -1,0 +1,10 @@
+using System;
+namespace ProjectSalutis.droid
+{
+	public class ListItem_Goal
+	{
+		public ListItem_Goal()
+		{
+		}
+	}
+}

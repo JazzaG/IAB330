@@ -97,6 +97,7 @@
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\GoalListView.axml" />
+    <AndroidResource Include="Resources\layout\ListItem_Goal.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
