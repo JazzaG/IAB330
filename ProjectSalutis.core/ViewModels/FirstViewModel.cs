@@ -31,5 +31,13 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
+		public ICommand GoalListCommand
+		{
+			get
+			{
+				return new MvxCommand(() => ShowViewModel<GoalListViewModel>());
+			}
+		}
+
     }
 }

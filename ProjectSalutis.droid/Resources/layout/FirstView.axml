@@ -22,4 +22,10 @@
         android:layout_height="wrap_content"
         android:id="@+id/buttonContact"
         local:MvxBind="Click ContactCommand" />
+    <Button
+        android:text="Goal List"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonContact"
+        local:MvxBind="Click GoalListCommand" />
 </LinearLayout>
