@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ProjectSalutis.droid</RootNamespace>
     <AssemblyName>ProjectSalutis.droid</AssemblyName>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -77,19 +77,26 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\JourneyView.cs" />
     <Compile Include="Views\NewContactView.cs" />
     <Compile Include="Views\CreateGoal.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\layout\FirstView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\NewContactView.axml" />
     <AndroidResource Include="Resources\layout\CreateGoal.axml" />
     <AndroidResource Include="Resources\layout\AddtoJourneyView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JourneyView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>

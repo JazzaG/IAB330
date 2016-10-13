@@ -42,13 +42,14 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            local:MvxBind="Click CancelJourneyCommand"
             android:text="Cancel"
             android:id="@+id/cancel_button" />
         <Button
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            local:MvxBind="Click ButtonCommand"
+            local:MvxBind="Click AddJourneyCommand"
             android:text="Add Entry"
             android:id="@+id/add_button" />
     </LinearLayout>

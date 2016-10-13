@@ -17,13 +17,12 @@ namespace ProjectSalutis.core.ViewModels
             }
         }
 
-        public ICommand ButtonCommand { get; private set; }
+        public ICommand CancelJourneyCommand { get; private set; }
+        public ICommand AddJourneyCommand { get; private set; }
         public AddtoJourneyViewModel()
         {
-            ButtonCommand = new MvxCommand(() =>
-            {
-                //do nothing
-            });
+            AddJourneyCommand = new MvxCommand(() => ShowViewModel<JourneyViewModel>());
+            CancelJourneyCommand = new MvxCommand(() => ShowViewModel<JourneyViewModel>());
         }
 
     }
