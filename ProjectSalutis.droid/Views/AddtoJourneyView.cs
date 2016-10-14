@@ -23,6 +23,7 @@ namespace ProjectSalutis.droid.Views
             Button add = FindViewById<Button>(Resource.Id.add_button);
 
             add.Click += delegate {
+
                 string toast = string.Format("{0}/10 on {1} journey", seekbar.Progress, spinner.SelectedItem);
                 Toast.MakeText(this, toast, ToastLength.Long).Show();
             };

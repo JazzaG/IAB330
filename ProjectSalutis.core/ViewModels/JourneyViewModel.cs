@@ -1,20 +1,45 @@
 ﻿using MvvmCross.Core.ViewModels;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using ProjectSalutis.core.Interfaces;
+using ProjectSalutis.core.Models;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 
 namespace ProjectSalutis.core.ViewModels
 {
-    class JourneyViewModel
+    public class JourneyViewModel
         : MvxViewModel
     {
-        public ICommand AddJourneyCommand { get; private set; }
-        public JourneyViewModel()
+        private ObservableCollection<JourneyEntry> entries = new ObservableCollection<JourneyEntry>();
+
+        public ObservableCollection<JourneyEntry> Entries
         {
+            get { return entries; }
+            set { SetProperty(ref entries, value); }
+        }
+
+        private readonly IJourneyDatabase journeyDatabase;
+
+        public ICommand AddJourneyCommand { get; private set; }
+
+        public JourneyViewModel(IJourneyDatabase journeyDatabase)
+        {
+            this.journeyDatabase = journeyDatabase;
             AddJourneyCommand = new MvxCommand(() => ShowViewModel<AddtoJourneyViewModel>());
+        }
+
+        public void OnResume()
+        {
+            GetEntries();
+        }
+
+        public async void GetEntries()
+        {
+            var entries = await journeyDatabase.GetEntries();
+            Entries.Clear();
+            foreach (var entry in entries)
+            {
+                Entries.Add(entry);
+            }
         }
     }
 }

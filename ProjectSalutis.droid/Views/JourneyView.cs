@@ -1,6 +1,7 @@
 using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
+using ProjectSalutis.core.ViewModels;
 
 namespace ProjectSalutis.droid.Views
 {
@@ -11,6 +12,12 @@ namespace ProjectSalutis.droid.Views
         {
             base.OnCreate(bundle);
             SetContentView(Resource.Layout.JourneyView);
+        }
+        protected override void OnResume()
+        {
+            var vm = (JourneyViewModel)ViewModel;
+            vm.OnResume();
+            base.OnResume();
         }
     }
 }

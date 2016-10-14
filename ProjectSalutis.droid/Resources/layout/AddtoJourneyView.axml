@@ -5,11 +5,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="20dp">
-    <Spinner
+    <Mvx.MvxSpinner
         android:id="@+id/journey_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/journey_array" />
+        local:MvxBind="ItemsSource EntryCategories; SelectedItem CategorySelection" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"

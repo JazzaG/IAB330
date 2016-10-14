@@ -15,5 +15,6 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/mvxListView1" />
+        local:MvxBind="ItemsSource Entries; ItemClick EntryDetailCommand"
+        local:MvxItemTemplate="@layout/journeyentrylayout" />
 </LinearLayout>
