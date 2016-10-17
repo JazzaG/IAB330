@@ -63,9 +63,6 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f070000
 			public const int goal_types = 2131165184;
 			
-			// aapt resource value: 0x7f070003
-			public const int journey_array = 2131165187;
-			
 			static Array()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
