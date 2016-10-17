@@ -12,7 +12,8 @@ namespace ProjectSalutis.core.Models
 
         public JourneyEntry(string category, int rating, string notes)
         {
-            Timestamp = DateTime.Now;
+            Timestamp = DateTime.Now.ToLocalTime();
+            Timestamp_string = Timestamp.ToString(); //required for the time to show as not UTC
             Category = category;
             Rating = rating;
             Notes = notes;
@@ -20,12 +21,14 @@ namespace ProjectSalutis.core.Models
 
         public JourneyEntry(string category, int rating)
         {
-            Timestamp = DateTime.Now;
+            Timestamp = DateTime.Now.ToLocalTime();
+            Timestamp_string = Timestamp.ToString(); //required for the time to show as not UTC
             Category = category;
             Rating = rating;
         }
 
         public DateTime Timestamp { get; set; }
+        public string Timestamp_string { get; set; }
         public string Category { get; set; }
         public int Rating { get; set; }
         public string Notes { get; set; }

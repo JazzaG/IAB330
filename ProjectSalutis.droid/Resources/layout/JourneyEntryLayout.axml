@@ -15,5 +15,5 @@
     <TextView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        local:MvxBind="Text Timestamp" />
+        local:MvxBind="Text Timestamp_string" />
 </LinearLayout>
