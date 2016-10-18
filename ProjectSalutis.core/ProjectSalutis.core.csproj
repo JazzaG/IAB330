@@ -41,6 +41,9 @@
     <Compile Include="ViewModels\JourneyViewModel.cs" />
     <Compile Include="ViewModels\NewContactViewModel.cs" />
     <Compile Include="ViewModels\CreateGoalViewModel.cs" />
+    <Compile Include="Models\Goal.cs" />
+    <Compile Include="Models\GoalType.cs" />
+    <Compile Include="ViewModels\GoalListViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Binding, Version=4.0.0.0, Culture=neutral, processorArchitecture=MSIL">

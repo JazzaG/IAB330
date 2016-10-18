@@ -12,12 +12,12 @@ namespace ProjectSalutis.droid.Views
 	[Activity(
 		Label = "New Goal"
 		, ScreenOrientation = ScreenOrientation.Portrait)]
-	public class CreateGoal : MvxActivity
+	public class CreateGoalView : MvxActivity
 	{
 		protected override void OnCreate(Bundle bundle)
 		{
 			base.OnCreate(bundle);
-			SetContentView(Resource.Layout.CreateGoal);
+			SetContentView(Resource.Layout.CreateGoalView);
 
 			// Show a toast when the add button is clicked
 			Button button = FindViewById<Button>(Resource.Id.goalAdd);
