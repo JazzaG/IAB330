@@ -4,7 +4,7 @@ using System.Threading.Tasks;
 
 namespace ProjectSalutis.core.Interfaces
 {
-    public interface IJourneyDatabase
+    public interface IProjectDatabase
     {
         Task<IEnumerable<JourneyEntry>> GetEntries();
 

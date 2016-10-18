@@ -10,10 +10,10 @@ using MvvmCross.Platform;
 
 namespace ProjectSalutis.core.Database
 {
-    public class JourneyDatabase : IJourneyDatabase
+    public class ProjectDatabase : IProjectDatabase
     {
         private SQLiteConnection database;
-        public JourneyDatabase()
+        public ProjectDatabase()
         {
             var sqlite = Mvx.Resolve<ISqlite>();
             database = sqlite.GetConnection();
@@ -22,7 +22,7 @@ namespace ProjectSalutis.core.Database
 
         public async Task<IEnumerable<JourneyEntry>> GetEntries()
         {
-            return database.Table<JourneyEntry>().ToList();
+            return database.Table<JourneyEntry>().Reverse().ToList();
         }
 
         public async Task<int> DeleteEntry(object id)

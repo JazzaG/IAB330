@@ -29,7 +29,7 @@ namespace ProjectSalutis.droid
         {
             Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
             
-            Mvx.LazyConstructAndRegisterSingleton<IJourneyDatabase, JourneyDatabase>();
+            Mvx.LazyConstructAndRegisterSingleton<IProjectDatabase, ProjectDatabase>();
             base.InitializeFirstChance();
         }
     }

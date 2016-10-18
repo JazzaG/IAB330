@@ -17,13 +17,13 @@ namespace ProjectSalutis.core.ViewModels
             set { SetProperty(ref entries, value); }
         }
 
-        private readonly IJourneyDatabase journeyDatabase;
+        private readonly IProjectDatabase projectDatabase;
 
         public ICommand AddJourneyCommand { get; private set; }
 
-        public JourneyViewModel(IJourneyDatabase journeyDatabase)
+        public JourneyViewModel(IProjectDatabase projectDatabase)
         {
-            this.journeyDatabase = journeyDatabase;
+            this.projectDatabase = projectDatabase;
             AddJourneyCommand = new MvxCommand(() => ShowViewModel<AddtoJourneyViewModel>());
         }
 
@@ -34,7 +34,7 @@ namespace ProjectSalutis.core.ViewModels
 
         public async void GetEntries()
         {
-            var entries = await journeyDatabase.GetEntries();
+            var entries = await projectDatabase.GetEntries();
             Entries.Clear();
             foreach (var entry in entries)
             {

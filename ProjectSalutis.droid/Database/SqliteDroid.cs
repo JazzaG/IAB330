@@ -9,7 +9,7 @@ namespace ProjectSalutis.droid.Database
     {
         public SQLiteConnection GetConnection()
         {
-            var sqliteFilename = "JourneySQLite.db3";
+            var sqliteFilename = "ProjectSQLite.db3";
             string documentsPath = System.Environment.GetFolderPath(System.Environment.SpecialFolder.Personal);
             var path = Path.Combine(documentsPath, sqliteFilename);
             //Create connection
