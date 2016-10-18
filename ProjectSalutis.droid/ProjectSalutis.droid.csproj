@@ -8,7 +8,7 @@
     <OutputType>Library</OutputType>
     <RootNamespace>ProjectSalutis.droid</RootNamespace>
     <AssemblyName>ProjectSalutis.droid</AssemblyName>
-    <TargetFrameworkVersion>v6.0</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v7.0</TargetFrameworkVersion>
     <AndroidApplication>True</AndroidApplication>
     <AndroidResgenFile>Resources\Resource.designer.cs</AndroidResgenFile>
     <AndroidResgenClass>Resource</AndroidResgenClass>
@@ -39,6 +39,14 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="Mono.Android.Export" />
+    <Reference Include="SQLite.Net, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net.Core-PCL.3.1.1\lib\portable-win8+net45+wp8+wpa81+MonoAndroid1+MonoTouch1\SQLite.Net.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="SQLite.Net.Platform.XamarinAndroid, Version=3.1.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\SQLite.Net-PCL.3.1.1\lib\MonoAndroid\SQLite.Net.Platform.XamarinAndroid.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Xml" />
     <Reference Include="System.Core" />
@@ -67,11 +75,9 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.4.2.3\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
     </Reference>
-    <Reference Include="Xamarin.Android.Support.v7.CardView">
-      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
-    </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Database\SqliteDroid.cs" />
     <Compile Include="DebugTrace.cs" />
     <Compile Include="LinkerPleaseInclude.cs" />
     <Compile Include="Resources\Resource.designer.cs" />
@@ -80,24 +86,31 @@
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
     <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\JourneyView.cs" />
     <Compile Include="Views\NewContactView.cs" />
-    <Compile Include="Views\CreateGoalView.cs" />
-    <Compile Include="Views\GoalListView.cs" />
+    <Compile Include="Views\CreateGoal.cs" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\layout\FirstView.axml" />
+    <AndroidResource Include="Resources\layout\FirstView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
     <AndroidResource Include="Resources\layout\NewContactView.axml" />
-    <AndroidResource Include="Resources\layout\CreateGoalView.axml" />
+    <AndroidResource Include="Resources\layout\CreateGoal.axml" />
     <AndroidResource Include="Resources\layout\AddtoJourneyView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
-    <AndroidResource Include="Resources\layout\GoalListView.axml" />
-    <AndroidResource Include="Resources\layout\ListItem_Goal.axml" />
+    <AndroidResource Include="Resources\layout\JourneyView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JourneyEntryLayout.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

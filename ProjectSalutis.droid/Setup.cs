@@ -2,6 +2,10 @@ using Android.Content;
 using MvvmCross.Droid.Platform;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Platform.Platform;
+using MvvmCross.Platform;
+using ProjectSalutis.core.Interfaces;
+using ProjectSalutis.droid.Database;
+using ProjectSalutis.core.Database;
 
 namespace ProjectSalutis.droid
 {
@@ -19,6 +23,14 @@ namespace ProjectSalutis.droid
         protected override IMvxTrace CreateDebugTrace()
         {
             return new DebugTrace();
+        }
+
+        protected override void InitializeFirstChance()
+        {
+            Mvx.LazyConstructAndRegisterSingleton<ISqlite, SqliteDroid>();
+            
+            Mvx.LazyConstructAndRegisterSingleton<IJourneyDatabase, JourneyDatabase>();
+            base.InitializeFirstChance();
         }
     }
 }

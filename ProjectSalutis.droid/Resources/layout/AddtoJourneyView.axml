@@ -5,11 +5,11 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="20dp">
-    <Spinner
+    <Mvx.MvxSpinner
         android:id="@+id/journey_spinner"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/journey_array" />
+        local:MvxBind="ItemsSource EntryCategories; SelectedItem CategorySelection" />
     <TextView
         android:textAppearance="?android:attr/textAppearanceMedium"
         android:layout_width="match_parent"
@@ -42,13 +42,14 @@
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            local:MvxBind="Click CancelJourneyCommand"
             android:text="Cancel"
             android:id="@+id/cancel_button" />
         <Button
             android:layout_weight="1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            local:MvxBind="Click ButtonCommand"
+            local:MvxBind="Click AddJourneyCommand"
             android:text="Add Entry"
             android:id="@+id/add_button" />
     </LinearLayout>

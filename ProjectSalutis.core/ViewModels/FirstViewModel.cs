@@ -11,7 +11,7 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			get
 			{
-				return new MvxCommand(() => ShowViewModel<AddtoJourneyViewModel>());
+				return new MvxCommand(() => ShowViewModel<JourneyViewModel>());
 			}
 		}
 
