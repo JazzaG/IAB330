@@ -138,8 +138,8 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f050008
 			public const int add_button = 2131034120;
 			
-			// aapt resource value: 0x7f050012
-			public const int button1 = 2131034130;
+			// aapt resource value: 0x7f050013
+			public const int button1 = 2131034131;
 			
 			// aapt resource value: 0x7f050011
 			public const int buttonContact = 2131034129;
@@ -153,20 +153,20 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f050007
 			public const int cancel_button = 2131034119;
 			
-			// aapt resource value: 0x7f050013
-			public const int editText1 = 2131034131;
-			
 			// aapt resource value: 0x7f050014
-			public const int editText2 = 2131034132;
+			public const int editText1 = 2131034132;
 			
 			// aapt resource value: 0x7f050015
-			public const int editText3 = 2131034133;
+			public const int editText2 = 2131034133;
 			
 			// aapt resource value: 0x7f050016
-			public const int editText4 = 2131034134;
+			public const int editText3 = 2131034134;
 			
 			// aapt resource value: 0x7f050017
-			public const int editText5 = 2131034135;
+			public const int editText4 = 2131034135;
+			
+			// aapt resource value: 0x7f050018
+			public const int editText5 = 2131034136;
 			
 			// aapt resource value: 0x7f050004
 			public const int feeling_scale = 2131034116;
@@ -198,6 +198,9 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f050006
 			public const int notes_edittext = 2131034118;
 			
+			// aapt resource value: 0x7f050012
+			public const int plot = 2131034130;
+			
 			// aapt resource value: 0x7f050003
 			public const int textView1 = 2131034115;
 			
@@ -224,16 +227,19 @@ namespace ProjectSalutis.droid
 			public const int FirstView = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int JourneyEntryLayout = 2130903043;
+			public const int GraphView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int JourneyView = 2130903044;
+			public const int JourneyEntryLayout = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int NewContactView = 2130903045;
+			public const int JourneyView = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int SplashScreen = 2130903046;
+			public const int NewContactView = 2130903046;
+			
+			// aapt resource value: 0x7f030007
+			public const int SplashScreen = 2130903047;
 			
 			static Layout()
 			{

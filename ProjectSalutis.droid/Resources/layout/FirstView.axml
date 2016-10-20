@@ -11,6 +11,12 @@
         android:id="@+id/buttonJourney"
         local:MvxBind="Click JourneyCommand" />
     <Button
+        android:text="Graph"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/buttonJourney"
+        local:MvxBind="Click GraphCommand" />
+    <Button
         android:text="Goal"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
