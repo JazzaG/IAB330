@@ -75,6 +75,9 @@
     <Reference Include="MvvmCross.Localization">
       <HintPath>..\packages\MvvmCross.Binding.4.2.3\lib\MonoAndroid\MvvmCross.Localization.dll</HintPath>
     </Reference>
+    <Reference Include="Xamarin.Android.Support.v7.CardView">
+      <HintPath>..\packages\Xamarin.Android.Support.v7.CardView.23.4.0.1\lib\MonoAndroid403\Xamarin.Android.Support.v7.CardView.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Database\SqliteDroid.cs" />
@@ -85,7 +88,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
-    <Compile Include="Views\FirstView.cs" />
+    <Compile Include="Views\NavigationView.cs" />
     <Compile Include="Views\JourneyView.cs" />
     <Compile Include="Views\NewContactView.cs" />
     <Compile Include="Views\CreateGoalView.cs" />
@@ -98,7 +101,7 @@
     <None Include="Properties\AndroidManifest.xml" />
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
-    <AndroidResource Include="Resources\layout\FirstView.axml">
+    <AndroidResource Include="Resources\layout\NavigationView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
     <AndroidResource Include="Resources\layout\NewContactView.axml" />

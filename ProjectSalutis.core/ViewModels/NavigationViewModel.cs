@@ -3,7 +3,7 @@ using MvvmCross.Core.ViewModels;
 
 namespace ProjectSalutis.core.ViewModels
 {
-    public class FirstViewModel 
+    public class NavigationViewModel 
         : MvxViewModel
     {
 
