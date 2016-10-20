@@ -20,26 +20,41 @@ namespace ProjectSalutis.core.Database
             database.CreateTable<JourneyEntry>();
         }
 
-        public async Task<IEnumerable<JourneyEntry>> GetEntries()
+        public async Task<IEnumerable<JourneyEntry>> GetJourneyEntries()
         {
             return database.Table<JourneyEntry>().Reverse().ToList();
         }
 
-        public async Task<int> DeleteEntry(object id)
+        public async Task<int> DeleteJourneyEntry(object id)
         {
             return database.Delete<JourneyEntry>(Convert.ToInt16(id));
         }
 
-        public async Task<int> InsertEntry(JourneyEntry entry)
+        public async Task<int> InsertJourneyEntry(JourneyEntry entry)
         {
             var num = database.Insert(entry);
             database.Commit();
             return num;
         }
 
-        public async Task<int> InsertEntry(string category, int rating)
+        public async Task<int> InsertJourneyEntry(string category, int rating)
         {
-            return await InsertEntry(new JourneyEntry(category, rating));
+            return await InsertJourneyEntry(new JourneyEntry(category, rating));
         }
-    }
+
+		public async Task<IEnumerable<Goal>> GetGoals()
+		{
+			throw new NotImplementedException();
+		}
+
+		public async Task<int> DeleteGoal(object id)
+		{
+			throw new NotImplementedException();
+		}
+
+		public async Task<int> InsertGoal(Goal goal)
+		{
+			throw new NotImplementedException();
+		}
+	}
 }

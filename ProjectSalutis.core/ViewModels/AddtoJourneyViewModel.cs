@@ -54,7 +54,7 @@ namespace ProjectSalutis.core.ViewModels
 
         public async void AddEntry(string category, int rating)
         {
-            await journeyDatabase.InsertEntry(category, rating);
+            await journeyDatabase.InsertJourneyEntry(category, rating);
             Close(this);
         }
 

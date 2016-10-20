@@ -34,7 +34,7 @@ namespace ProjectSalutis.core.ViewModels
 
         public async void GetEntries()
         {
-            var entries = await projectDatabase.GetEntries();
+            var entries = await projectDatabase.GetJourneyEntries();
             Entries.Clear();
             foreach (var entry in entries)
             {
