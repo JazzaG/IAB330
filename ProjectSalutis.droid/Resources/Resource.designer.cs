@@ -47,6 +47,41 @@ namespace ProjectSalutis.droid
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView = global::ProjectSalutis.droid.Resource.Styleable.MvxListView;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate = global::ProjectSalutis.droid.Resource.Styleable.MvxListView_MvxDropDownItemTemplate;
 			global::MvvmCross.Binding.Droid.Resource.Styleable.MvxListView_MvxItemTemplate = global::ProjectSalutis.droid.Resource.Styleable.MvxListView_MvxItemTemplate;
+			global::com.refractored.fab.Resource.Attribute.fab_colorDisabled = global::ProjectSalutis.droid.Resource.Attribute.fab_colorDisabled;
+			global::com.refractored.fab.Resource.Attribute.fab_colorNormal = global::ProjectSalutis.droid.Resource.Attribute.fab_colorNormal;
+			global::com.refractored.fab.Resource.Attribute.fab_colorPressed = global::ProjectSalutis.droid.Resource.Attribute.fab_colorPressed;
+			global::com.refractored.fab.Resource.Attribute.fab_colorRipple = global::ProjectSalutis.droid.Resource.Attribute.fab_colorRipple;
+			global::com.refractored.fab.Resource.Attribute.fab_shadow = global::ProjectSalutis.droid.Resource.Attribute.fab_shadow;
+			global::com.refractored.fab.Resource.Attribute.fab_size = global::ProjectSalutis.droid.Resource.Attribute.fab_size;
+			global::com.refractored.fab.Resource.Attribute.layoutManager = global::ProjectSalutis.droid.Resource.Attribute.layoutManager;
+			global::com.refractored.fab.Resource.Attribute.reverseLayout = global::ProjectSalutis.droid.Resource.Attribute.reverseLayout;
+			global::com.refractored.fab.Resource.Attribute.spanCount = global::ProjectSalutis.droid.Resource.Attribute.spanCount;
+			global::com.refractored.fab.Resource.Attribute.stackFromEnd = global::ProjectSalutis.droid.Resource.Attribute.stackFromEnd;
+			global::com.refractored.fab.Resource.Color.fab_material_blue_500 = global::ProjectSalutis.droid.Resource.Color.fab_material_blue_500;
+			global::com.refractored.fab.Resource.Dimension.fab_elevation_lollipop = global::ProjectSalutis.droid.Resource.Dimension.fab_elevation_lollipop;
+			global::com.refractored.fab.Resource.Dimension.fab_scroll_threshold = global::ProjectSalutis.droid.Resource.Dimension.fab_scroll_threshold;
+			global::com.refractored.fab.Resource.Dimension.fab_shadow_size = global::ProjectSalutis.droid.Resource.Dimension.fab_shadow_size;
+			global::com.refractored.fab.Resource.Dimension.fab_size_mini = global::ProjectSalutis.droid.Resource.Dimension.fab_size_mini;
+			global::com.refractored.fab.Resource.Dimension.fab_size_normal = global::ProjectSalutis.droid.Resource.Dimension.fab_size_normal;
+			global::com.refractored.fab.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame = global::ProjectSalutis.droid.Resource.Dimension.item_touch_helper_max_drag_scroll_per_frame;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow = global::ProjectSalutis.droid.Resource.Drawable.fab_shadow;
+			global::com.refractored.fab.Resource.Drawable.fab_shadow_mini = global::ProjectSalutis.droid.Resource.Drawable.fab_shadow_mini;
+			global::com.refractored.fab.Resource.Id.item_touch_helper_previous_elevation = global::ProjectSalutis.droid.Resource.Id.item_touch_helper_previous_elevation;
+			global::com.refractored.fab.Resource.Id.mini = global::ProjectSalutis.droid.Resource.Id.mini;
+			global::com.refractored.fab.Resource.Id.normal = global::ProjectSalutis.droid.Resource.Id.normal;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorDisabled = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_colorDisabled;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorNormal = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_colorNormal;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorPressed = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_colorPressed;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_colorRipple = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_colorRipple;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_shadow = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_shadow;
+			global::com.refractored.fab.Resource.Styleable.FloatingActionButton_fab_size = global::ProjectSalutis.droid.Resource.Styleable.FloatingActionButton_fab_size;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView_android_orientation = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView_android_orientation;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView_layoutManager = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView_layoutManager;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView_reverseLayout = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView_reverseLayout;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView_spanCount = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView_spanCount;
+			global::com.refractored.fab.Resource.Styleable.RecyclerView_stackFromEnd = global::ProjectSalutis.droid.Resource.Styleable.RecyclerView_stackFromEnd;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.ApplicationName = global::ProjectSalutis.droid.Resource.String.ApplicationName;
 			global::SQLite.Net.Platform.XamarinAndroid.Resource.String.Hello = global::ProjectSalutis.droid.Resource.String.Hello;
 		}
@@ -54,14 +89,14 @@ namespace ProjectSalutis.droid
 		public partial class Array
 		{
 			
-			// aapt resource value: 0x7f070002
-			public const int goal_durations = 2131165186;
+			// aapt resource value: 0x7f090002
+			public const int goal_durations = 2131296258;
 			
-			// aapt resource value: 0x7f070001
-			public const int goal_frequencies = 2131165185;
+			// aapt resource value: 0x7f090001
+			public const int goal_frequencies = 2131296257;
 			
-			// aapt resource value: 0x7f070000
-			public const int goal_types = 2131165184;
+			// aapt resource value: 0x7f090000
+			public const int goal_types = 2131296256;
 			
 			static Array()
 			{
@@ -76,26 +111,44 @@ namespace ProjectSalutis.droid
 		public partial class Attribute
 		{
 			
-			// aapt resource value: 0x7f010000
-			public const int MvxBind = 2130771968;
-			
-			// aapt resource value: 0x7f010004
-			public const int MvxDropDownItemTemplate = 2130771972;
-			
-			// aapt resource value: 0x7f010005
-			public const int MvxGroupItemTemplate = 2130771973;
-			
-			// aapt resource value: 0x7f010003
-			public const int MvxItemTemplate = 2130771971;
-			
-			// aapt resource value: 0x7f010001
-			public const int MvxLang = 2130771969;
-			
 			// aapt resource value: 0x7f010006
-			public const int MvxSource = 2130771974;
+			public const int MvxBind = 2130771974;
+			
+			// aapt resource value: 0x7f01000a
+			public const int MvxDropDownItemTemplate = 2130771978;
+			
+			// aapt resource value: 0x7f01000b
+			public const int MvxGroupItemTemplate = 2130771979;
+			
+			// aapt resource value: 0x7f010009
+			public const int MvxItemTemplate = 2130771977;
+			
+			// aapt resource value: 0x7f010007
+			public const int MvxLang = 2130771975;
+			
+			// aapt resource value: 0x7f01000c
+			public const int MvxSource = 2130771980;
+			
+			// aapt resource value: 0x7f010008
+			public const int MvxTemplate = 2130771976;
 			
 			// aapt resource value: 0x7f010002
-			public const int MvxTemplate = 2130771970;
+			public const int fab_colorDisabled = 2130771970;
+			
+			// aapt resource value: 0x7f010001
+			public const int fab_colorNormal = 2130771969;
+			
+			// aapt resource value: 0x7f010000
+			public const int fab_colorPressed = 2130771968;
+			
+			// aapt resource value: 0x7f010003
+			public const int fab_colorRipple = 2130771971;
+			
+			// aapt resource value: 0x7f010004
+			public const int fab_shadow = 2130771972;
+			
+			// aapt resource value: 0x7f010005
+			public const int fab_size = 2130771973;
 			
 			static Attribute()
 			{
@@ -107,14 +160,64 @@ namespace ProjectSalutis.droid
 			}
 		}
 		
+		public partial class Color
+		{
+			
+			// aapt resource value: 0x7f050000
+			public const int fab_material_blue_500 = 2131034112;
+			
+			static Color()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Color()
+			{
+			}
+		}
+		
+		public partial class Dimension
+		{
+			
+			// aapt resource value: 0x7f060004
+			public const int fab_elevation_lollipop = 2131099652;
+			
+			// aapt resource value: 0x7f060003
+			public const int fab_scroll_threshold = 2131099651;
+			
+			// aapt resource value: 0x7f060002
+			public const int fab_shadow_size = 2131099650;
+			
+			// aapt resource value: 0x7f060001
+			public const int fab_size_mini = 2131099649;
+			
+			// aapt resource value: 0x7f060000
+			public const int fab_size_normal = 2131099648;
+			
+			static Dimension()
+			{
+				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
+			}
+			
+			private Dimension()
+			{
+			}
+		}
+		
 		public partial class Drawable
 		{
 			
 			// aapt resource value: 0x7f020000
-			public const int scale = 2130837504;
+			public const int fab_shadow = 2130837504;
 			
 			// aapt resource value: 0x7f020001
-			public const int splash = 2130837505;
+			public const int fab_shadow_mini = 2130837505;
+			
+			// aapt resource value: 0x7f020002
+			public const int scale = 2130837506;
+			
+			// aapt resource value: 0x7f020003
+			public const int splash = 2130837507;
 			
 			static Drawable()
 			{
@@ -129,68 +232,83 @@ namespace ProjectSalutis.droid
 		public partial class Id
 		{
 			
-			// aapt resource value: 0x7f050000
-			public const int MvvmCrossTagId = 2131034112;
+			// aapt resource value: 0x7f070000
+			public const int MvvmCrossTagId = 2131165184;
 			
-			// aapt resource value: 0x7f050001
-			public const int MvxBindingTagUnique = 2131034113;
+			// aapt resource value: 0x7f070001
+			public const int MvxBindingTagUnique = 2131165185;
 			
-			// aapt resource value: 0x7f050008
-			public const int add_button = 2131034120;
+			// aapt resource value: 0x7f07000a
+			public const int add_button = 2131165194;
 			
-			// aapt resource value: 0x7f05000f
-			public const int button1 = 2131034127;
+			// aapt resource value: 0x7f070014
+			public const int button1 = 2131165204;
 			
-			// aapt resource value: 0x7f050007
-			public const int cancel_button = 2131034119;
+			// aapt resource value: 0x7f070013
+			public const int buttonContact = 2131165203;
 			
-			// aapt resource value: 0x7f050010
-			public const int editText1 = 2131034128;
+			// aapt resource value: 0x7f070012
+			public const int buttonGoal = 2131165202;
 			
-			// aapt resource value: 0x7f050011
-			public const int editText2 = 2131034129;
+			// aapt resource value: 0x7f070011
+			public const int buttonJourney = 2131165201;
 			
-			// aapt resource value: 0x7f050012
-			public const int editText3 = 2131034130;
+			// aapt resource value: 0x7f070009
+			public const int cancel_button = 2131165193;
 			
-			// aapt resource value: 0x7f050013
-			public const int editText4 = 2131034131;
+			// aapt resource value: 0x7f070015
+			public const int editText1 = 2131165205;
 			
-			// aapt resource value: 0x7f050014
-			public const int editText5 = 2131034132;
+			// aapt resource value: 0x7f070016
+			public const int editText2 = 2131165206;
 			
-			// aapt resource value: 0x7f050004
-			public const int feeling_scale = 2131034116;
+			// aapt resource value: 0x7f070017
+			public const int editText3 = 2131165207;
 			
-			// aapt resource value: 0x7f050005
-			public const int feeling_seekbar = 2131034117;
+			// aapt resource value: 0x7f070018
+			public const int editText4 = 2131165208;
 			
-			// aapt resource value: 0x7f05000e
-			public const int goalAdd = 2131034126;
+			// aapt resource value: 0x7f070019
+			public const int editText5 = 2131165209;
 			
-			// aapt resource value: 0x7f05000d
-			public const int goalDuration = 2131034125;
+			// aapt resource value: 0x7f070006
+			public const int feeling_scale = 2131165190;
 			
-			// aapt resource value: 0x7f05000c
-			public const int goalFrequency = 2131034124;
+			// aapt resource value: 0x7f070007
+			public const int feeling_seekbar = 2131165191;
 			
-			// aapt resource value: 0x7f05000b
-			public const int goalQuantifier = 2131034123;
+			// aapt resource value: 0x7f070010
+			public const int goalAdd = 2131165200;
 			
-			// aapt resource value: 0x7f05000a
-			public const int goalQuantity = 2131034122;
+			// aapt resource value: 0x7f07000f
+			public const int goalDuration = 2131165199;
 			
-			// aapt resource value: 0x7f050009
-			public const int goalType = 2131034121;
+			// aapt resource value: 0x7f07000e
+			public const int goalFrequency = 2131165198;
 			
-			// aapt resource value: 0x7f050002
-			public const int journey_spinner = 2131034114;
+			// aapt resource value: 0x7f07000d
+			public const int goalQuantifier = 2131165197;
 			
-			// aapt resource value: 0x7f050006
-			public const int notes_edittext = 2131034118;
+			// aapt resource value: 0x7f07000c
+			public const int goalQuantity = 2131165196;
 			
-			// aapt resource value: 0x7f050003
-			public const int textView1 = 2131034115;
+			// aapt resource value: 0x7f07000b
+			public const int goalType = 2131165195;
+			
+			// aapt resource value: 0x7f070004
+			public const int journey_spinner = 2131165188;
+			
+			// aapt resource value: 0x7f070002
+			public const int mini = 2131165186;
+			
+			// aapt resource value: 0x7f070003
+			public const int normal = 2131165187;
+			
+			// aapt resource value: 0x7f070008
+			public const int notes_edittext = 2131165192;
+			
+			// aapt resource value: 0x7f070005
+			public const int textView1 = 2131165189;
 			
 			static Id()
 			{
@@ -270,8 +388,8 @@ namespace ProjectSalutis.droid
 		public partial class Style
 		{
 			
-			// aapt resource value: 0x7f060000
-			public const int Theme_Splash = 2131099648;
+			// aapt resource value: 0x7f080000
+			public const int Theme_Splash = 2131230720;
 			
 			static Style()
 			{
@@ -286,9 +404,35 @@ namespace ProjectSalutis.droid
 		public partial class Styleable
 		{
 			
-			public static int[] MvxBinding = new int[] {
+			public static int[] FloatingActionButton = new int[] {
 					2130771968,
-					2130771969};
+					2130771969,
+					2130771970,
+					2130771971,
+					2130771972,
+					2130771973};
+			
+			// aapt resource value: 2
+			public const int FloatingActionButton_fab_colorDisabled = 2;
+			
+			// aapt resource value: 1
+			public const int FloatingActionButton_fab_colorNormal = 1;
+			
+			// aapt resource value: 0
+			public const int FloatingActionButton_fab_colorPressed = 0;
+			
+			// aapt resource value: 3
+			public const int FloatingActionButton_fab_colorRipple = 3;
+			
+			// aapt resource value: 4
+			public const int FloatingActionButton_fab_shadow = 4;
+			
+			// aapt resource value: 5
+			public const int FloatingActionButton_fab_size = 5;
+			
+			public static int[] MvxBinding = new int[] {
+					2130771974,
+					2130771975};
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -297,26 +441,26 @@ namespace ProjectSalutis.droid
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
-					2130771970};
+					2130771976};
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
-					2130771973};
+					2130771979};
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
-					2130771974};
+					2130771980};
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
-					2130771971,
-					2130771972};
+					2130771977,
+					2130771978};
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;

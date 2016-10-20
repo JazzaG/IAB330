@@ -34,6 +34,7 @@
     <Compile Include="Database\ProjectDatabase.cs" />
     <Compile Include="Interfaces\IProjectDatabase.cs" />
     <Compile Include="Interfaces\ISqlite.cs" />
+    <Compile Include="Models\ContactsEntry.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AddtoJourneyViewModel.cs" />
     <Compile Include="ViewModels\ContactsViewModel.cs" />
