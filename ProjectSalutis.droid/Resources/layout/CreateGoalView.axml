@@ -16,12 +16,12 @@
         android:layout_height="wrap_content"
         android:weightSum="8"
         android:padding="15dp">
-        <Spinner
+        <Mvx.MvxSpinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:entries="@array/goal_types"
-            local:MvxBind="Progress GoalType"
+            local:MvxBind="ItemsSource GoalTypes; SelectedItem GoalType"
             android:id="@+id/goalType" />
         <EditText
             android:layout_width="wrap_content"
