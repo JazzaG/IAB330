@@ -44,17 +44,19 @@ namespace ProjectSalutis.core.Database
 
 		public async Task<IEnumerable<Goal>> GetGoals()
 		{
-			throw new NotImplementedException();
+			return database.Table<Goal>().Reverse().ToList();
 		}
 
 		public async Task<int> DeleteGoal(object id)
 		{
-			throw new NotImplementedException();
+			return database.Delete<Goal>(Convert.ToInt16(id));
 		}
 
 		public async Task<int> InsertGoal(Goal goal)
 		{
-			throw new NotImplementedException();
+			var num = database.Insert(goal);
+			database.Commit();
+			return num;
 		}
 	}
 }
