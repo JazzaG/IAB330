@@ -15,13 +15,13 @@ namespace ProjectSalutis.core.ViewModels
 			get { return goals; }
 		}
 
-		public ICommand GoalClickCommand
-		{
-			get
-			{
-				//return new MvxCommand(() => );
-			}
-		}
+		//public ICommand GoalClickCommand
+		//{
+		//	get
+		//	{
+		//		//return new MvxCommand(() => );
+		//	}
+		//}
 
 	}
 }
