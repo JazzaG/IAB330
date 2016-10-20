@@ -7,6 +7,11 @@ namespace ProjectSalutis.core.ViewModels
 		: MvxViewModel
 	{
 
+		public string GoalType { get; set; }
+		public string Quantity { get; set; }
+		public string Frequency { get; set; }
+		public string Duration { get; set; }
+
 		public ICommand AddButtonClick
 		{
 			get

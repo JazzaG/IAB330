@@ -21,6 +21,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="4"
             android:entries="@array/goal_types"
+            local:MvxBind="Progress GoalType"
             android:id="@+id/goalType" />
         <EditText
             android:layout_width="wrap_content"
