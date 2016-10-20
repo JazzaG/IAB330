@@ -80,5 +80,6 @@
         android:layout_height="wrap_content"
         android:text="ADD"
         android:id="@+id/goalAdd"
+        local:MvxBind="Click AddButtonClick"
         android:textAppearance="@android:style/TextAppearance.Material.Title" />
 </LinearLayout>

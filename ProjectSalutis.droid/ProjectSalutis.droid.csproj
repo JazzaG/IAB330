@@ -116,7 +116,7 @@
     </AndroidResource>
     <AndroidResource Include="Resources\layout\CreateGoalView.axml" />
     <AndroidResource Include="Resources\layout\GoalListView.axml" />
-    <AndroidResource Include="Resources\layout\ListItem_Goal.axml" />
+    <AndroidResource Include="Resources\layout\GoalListLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
