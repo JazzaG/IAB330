@@ -15,7 +15,15 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
-		public ICommand GoalCommand
+        public ICommand GraphCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<GraphViewModel>());
+            }
+        }
+
+        public ICommand GoalCommand
 		{
 			get
 			{
