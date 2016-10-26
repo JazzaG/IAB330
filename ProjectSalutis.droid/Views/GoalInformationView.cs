@@ -3,7 +3,7 @@ using Android.App;
 using Android.OS;
 using MvvmCross.Droid.Views;
 
-namespace ProjectSalutis.droid
+namespace ProjectSalutis.droid.Views
 {
 	[Activity(Label = "Your Goal")]
 	public class GoalInformationView : MvxActivity
