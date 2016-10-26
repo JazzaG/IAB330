@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
+using ProjectSalutis.core.Models;
 
 namespace ProjectSalutis.core.ViewModels
 {
@@ -14,6 +15,7 @@ namespace ProjectSalutis.core.ViewModels
 		public string Duration { get; set; }
 
 		public bool AddButtonClicked { get; set; }
+		public int Steps { get; set; }
 
 		public List<string> GoalTypes
 		{
@@ -52,7 +54,7 @@ namespace ProjectSalutis.core.ViewModels
 				return new List<string>()
 				{
 					"1 Week",
-					"2 weeks",
+					"2 Weeks",
 					"1 Month",
 					"3 Months",
 				};
@@ -69,6 +71,17 @@ namespace ProjectSalutis.core.ViewModels
 
 		public void AddGoal()
 		{
+			// If quantity is empty, set it to 1
+			if (Quantity == "" || Quantity == null)
+			{
+				Quantity = "1";
+			}
+
+			// Create model
+			Goal goal = new Goal(GoalType, Quantity, Frequency, Duration);
+
+			// TODO: Store goal in database
+
 			// Notifiy listeners that button was clicked
 			RaisePropertyChanged(() => AddButtonClicked);
 		}

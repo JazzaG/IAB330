@@ -3,78 +3,73 @@ namespace ProjectSalutis.core.Models
 {
 	public class Goal
 	{
+		public string GoalType { get; set; }
+		public string Quantity { get; set; }
+		public string Frequency { get; set; }
+		public string Duration { get; set; }
 
-		private int percentageCompleted;
-		public int PercentageCompleted
+		public int StepsCompleted { get; set; }
+		public int TotalSteps { get; private set; }
+
+		public Goal(string goalType, string quantity, string frequency, string duration)
 		{
-			get
-			{
-				return percentageCompleted;
-			}
+			this.GoalType = goalType;
+			this.Quantity = quantity;
+			this.Frequency = frequency;
+			this.Duration = duration;
 
-			set
-			{
-				percentageCompleted = value;
-			}
+			this.StepsCompleted = 0;
+			this.TotalSteps = CalculateTotalSteps();
 		}
 
-		private int quantity;
-		public int Quantity
+		private int CalculateTotalSteps()
 		{
-			get
+			// steps = (durationAsDays / freqAsDays) * numOfTimes
+			int numOfTimes = Int32.Parse(Quantity);
+			int frequencyAsDay = 0;
+			int durationAsDay = 0;
+
+			// Find frequency as days
+			switch (Frequency)
 			{
-				return quantity;
+				case "Day":
+					frequencyAsDay = 1;
+					break;
+				case "Other Day":
+					frequencyAsDay = 2;
+					break;
+				case "Week":
+					frequencyAsDay = 7;
+					break;
+				case "Other Week":
+					frequencyAsDay = 14;
+					break;
 			}
 
-			set
+			// Find duration as days
+			switch (Duration)
 			{
-				quantity = value;
+				case "1 Week":
+					durationAsDay = 7;
+					break;
+				case "2 Weeks":
+					durationAsDay = 14;
+					break;
+				case "1 Month":
+					durationAsDay = 28;
+					break;
+				case "3 Months":
+					durationAsDay = 84;
+					break;
 			}
+
+			return durationAsDay / frequencyAsDay * numOfTimes;
 		}
 
-		private GoalType goalType;
-		public GoalType GoalType
+		public void AddPercentage()
 		{
-			get
-			{
-				return goalType;
-			}
-
-			set
-			{
-				goalType = value;
-			}
+			this.StepsCompleted += 1;
 		}
-
-		private DateTime endDate;
-		public DateTime EndDate
-		{
-			get
-			{
-				return endDate;
-			}
-
-			set
-			{
-				endDate = value;
-			}
-		}
-
-		private int frequencyInSeconds;
-		public int Frequency { get { return frequencyInSeconds; } }
-
-		public Goal(GoalType goalType, int quantity, int frequency, DateTime endDate)
-		{
-			this.percentageCompleted = 0;
-			this.quantity = quantity;
-			this.goalType = goalType;
-			this.frequencyInSeconds = frequency;
-			this.endDate = endDate;
-		}
-
-
-
-
 
 
 	}

@@ -22,6 +22,15 @@ namespace ProjectSalutis.droid.Views
 			SetContentView(Resource.Layout.CreateGoalView);
 
 			RegisterAddButtonClickListener();
+			SetQuantityViewConstraints();
+		}
+
+		private void SetQuantityViewConstraints()
+		{
+			EditText text = (EditText)FindViewById<EditText>(Resource.Id.goalQuantity);
+			text.Text = "1";
+
+			// TODO: figure out a way to enforce a non-empty value
 		}
 
 		private void RegisterAddButtonClickListener()
