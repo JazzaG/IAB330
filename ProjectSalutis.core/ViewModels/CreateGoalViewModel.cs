@@ -88,10 +88,14 @@ namespace ProjectSalutis.core.ViewModels
 			// Create model
 			Goal goal = new Goal(GoalType, Quantity, Frequency, Duration);
 
-			// TODO: Store goal in database
+			// Store goal in database
+			this.database.InsertGoal(goal);
 
 			// Notifiy listeners that button was clicked
 			RaisePropertyChanged(() => AddButtonClicked);
+
+			// Navigation to goal list view
+			ShowViewModel<GoalListViewModel>();
 		}
 
 

@@ -11,6 +11,36 @@ namespace ProjectSalutis.core.Models
 		public int StepsCompleted { get; set; }
 		public int TotalSteps { get; private set; }
 
+		public string QuantityView
+		{
+			get
+			{
+				return Quantity + " times every " + Frequency;
+			}
+		}
+
+		public string DurationView
+		{
+			get
+			{
+				return "for " + Duration;
+			}
+		}
+
+		public string PercentageView
+		{
+			get
+			{
+				int percentage = StepsCompleted / TotalSteps;
+				return percentage + "%";
+			}
+		}
+
+		public Goal()
+		{
+
+		}
+
 		public Goal(string goalType, string quantity, string frequency, string duration)
 		{
 			this.GoalType = goalType;
