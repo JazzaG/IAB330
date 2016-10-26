@@ -37,10 +37,10 @@ namespace ProjectSalutis.core.ViewModels
 			{
 				return new List<string>()
 				{
-					"Every Day",
-					"Every Other Day",
-					"Every Week",
-					"Every Other Week",
+					"Day",
+					"Other Day",
+					"Week",
+					"Other Week",
 				};
 			}
 		}
@@ -51,10 +51,10 @@ namespace ProjectSalutis.core.ViewModels
 			{
 				return new List<string>()
 				{
-					"For a Week",
-					"For two weeks",
-					"For a month",
-					"For three months",
+					"1 Week",
+					"2 weeks",
+					"1 Month",
+					"3 Months",
 				};
 			}
 		}
