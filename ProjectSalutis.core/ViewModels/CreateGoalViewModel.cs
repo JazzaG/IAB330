@@ -13,6 +13,8 @@ namespace ProjectSalutis.core.ViewModels
 		public string Frequency { get; set; }
 		public string Duration { get; set; }
 
+		public bool AddButtonClicked { get; set; }
+
 		public List<string> GoalTypes
 		{
 			get
@@ -61,13 +63,14 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			get
 			{
-				return new MvxCommand(() => AddGoal());
+				return new MvxCommand(() => { AddGoal(); });
 			}
 		}
 
 		public void AddGoal()
 		{
-			
+			// Notifiy listeners that button was clicked
+			RaisePropertyChanged(() => AddButtonClicked);
 		}
 
 
