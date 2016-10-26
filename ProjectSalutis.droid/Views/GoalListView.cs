@@ -3,8 +3,6 @@
 using Android.App;
 using Android.Content.PM;
 using Android.OS;
-using Android.Util;
-using Android.Widget;
 using MvvmCross.Droid.Views;
 using ProjectSalutis.core.ViewModels;
 

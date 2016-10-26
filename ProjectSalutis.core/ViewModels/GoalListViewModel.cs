@@ -10,8 +10,8 @@ namespace ProjectSalutis.core.ViewModels
 		: MvxViewModel
 	{
 
-		private ObservableCollection<Goal> goals = new ObservableCollection<Goal>();
-		public ObservableCollection<Goal> Goals 
+		private ObservableCollection<GoalListWrapper> goals = new ObservableCollection<GoalListWrapper>();
+		public ObservableCollection<GoalListWrapper> Goals 
 		{
 			get { return goals; }
 			set { SetProperty(ref goals, value); }
@@ -35,8 +35,13 @@ namespace ProjectSalutis.core.ViewModels
 			Goals.Clear();
 			foreach (var entry in entries)
 			{
-				Goals.Add(entry);
+				Goals.Add(new GoalListWrapper(entry, this));
 			}
+		}
+
+		public void OnGoalClick(Goal goal)
+		{
+			
 		}
 
 	}
