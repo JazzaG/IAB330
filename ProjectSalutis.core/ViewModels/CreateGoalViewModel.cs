@@ -1,6 +1,7 @@
 ﻿using System.Collections.Generic;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
+using ProjectSalutis.core.Interfaces;
 using ProjectSalutis.core.Models;
 
 namespace ProjectSalutis.core.ViewModels
@@ -67,6 +68,13 @@ namespace ProjectSalutis.core.ViewModels
 			{
 				return new MvxCommand(() => { AddGoal(); });
 			}
+		}
+
+		private IProjectDatabase database;
+
+		public CreateGoalViewModel(IProjectDatabase database)
+		{
+			this.database = database;
 		}
 
 		public void AddGoal()
