@@ -23,6 +23,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="50%"
+                local:MvxBind="Text Goal.PercentageView"
                 android:gravity="center"
                 android:textSize="36dp" />
         </LinearLayout>
@@ -54,16 +55,19 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Ride a Bike"
+                    local:MvxBind="Text Goal.GoalType"
                     android:layout_weight="1" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="2 times every week"
+                    local:MvxBind="Text Goal.QuantityView"
                     android:layout_weight="1" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="for a month"
+                    local:MvxBind="Text Goal.DurationView"
                     android:layout_weight="1" />
             </LinearLayout>
         </LinearLayout>

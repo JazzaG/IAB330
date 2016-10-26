@@ -9,7 +9,7 @@ namespace ProjectSalutis.core.ViewModels
 		: MvxViewModel
 	{
 
-		private Goal Goal { get; set; }
+		public Goal Goal { get; set; }
 
 		private IProjectDatabase database;
 
@@ -18,9 +18,22 @@ namespace ProjectSalutis.core.ViewModels
 			this.database = database;
 		}
 
-		public void Init()
+		protected override void InitFromBundle(IMvxBundle bundle)
 		{
+			int goalId = Int32.Parse(bundle.Data["goal-id"]);
+			LoadGoal(goalId);
+		}
 
+		private async void LoadGoal(int goalId)
+		{
+			var goals = await database.GetGoals();
+			foreach (var goal in goals)
+			{
+				if (goal.GoalId == goalId)
+				{
+					Goal = goal;
+				}
+			}
 		}
 
 	}

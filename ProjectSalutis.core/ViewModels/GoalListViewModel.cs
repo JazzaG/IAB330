@@ -1,4 +1,5 @@
-﻿using System.Collections.ObjectModel;
+﻿using System.Collections.Generic;
+using System.Collections.ObjectModel;
 using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using ProjectSalutis.core.Interfaces;
@@ -41,7 +42,12 @@ namespace ProjectSalutis.core.ViewModels
 
 		public void OnGoalClick(Goal goal)
 		{
-			
+			var parameters = new Dictionary<string, string>
+			{
+				{ "goal-id", goal.GoalId + "" }
+			};
+
+			ShowViewModel<GoalInformationViewModel>(parameters);
 		}
 
 	}
