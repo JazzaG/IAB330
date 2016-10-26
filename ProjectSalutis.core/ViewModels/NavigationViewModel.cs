@@ -39,13 +39,5 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
-		public ICommand GoalInfoCommand
-		{
-			get
-			{
-				return new MvxCommand(() => ShowViewModel<GoalInformationViewModel>());
-			}
-		}
-
     }
 }
