@@ -3,6 +3,7 @@ namespace ProjectSalutis.core.Models
 {
 	public class Goal
 	{
+		public int GoalId { get; set; }
 		public string GoalType { get; set; }
 		public string Quantity { get; set; }
 		public string Frequency { get; set; }
@@ -49,8 +50,9 @@ namespace ProjectSalutis.core.Models
 
 		}
 
-		public Goal(string goalType, string quantity, string frequency, string duration)
+		public Goal(int id, string goalType, string quantity, string frequency, string duration)
 		{
+			this.GoalId = id;
 			this.GoalType = goalType;
 			this.Quantity = quantity;
 			this.Frequency = frequency;

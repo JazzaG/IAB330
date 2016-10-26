@@ -87,7 +87,8 @@ namespace ProjectSalutis.core.ViewModels
 			}
 
 			// Create model
-			Goal goal = new Goal(GoalType, Quantity, Frequency, Duration);
+			int id = database.GetNumberOfGoals().Result + 1;
+			Goal goal = new Goal(id, GoalType, Quantity, Frequency, Duration);
 
 			// Store goal in database
 			this.database.InsertGoal(goal);

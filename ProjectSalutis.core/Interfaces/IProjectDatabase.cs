@@ -12,6 +12,7 @@ namespace ProjectSalutis.core.Interfaces
         Task<int> InsertJourneyEntry(string category, int rating);
 
 		Task<IEnumerable<Goal>> GetGoals();
+		Task<int> GetNumberOfGoals();
 		Task<int> DeleteGoal(object id);
 		Task<int> InsertGoal(Goal goal);
     }
