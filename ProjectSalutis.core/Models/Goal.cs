@@ -15,7 +15,15 @@ namespace ProjectSalutis.core.Models
 		{
 			get
 			{
-				return Quantity + " times every " + Frequency;
+				string view = Quantity + " time";
+				if (Int32.Parse(Quantity) > 1)
+				{
+					view += "s";
+				}
+
+				view += " every " + Frequency;
+
+				return view;
 			}
 		}
 

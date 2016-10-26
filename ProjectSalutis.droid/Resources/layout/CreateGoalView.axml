@@ -43,13 +43,14 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:id="@+id/goalQuantity"
+						local:MvxBind="Text Quantity"
                         android:numeric="integer"
                         android:inputType="number"
                         android:password="false"
                         android:phoneNumber="false"
                         android:maxLength="3" />
                     <TextView
-                        android:text="times"
+                        android:text="time(s)"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_weight="1"
