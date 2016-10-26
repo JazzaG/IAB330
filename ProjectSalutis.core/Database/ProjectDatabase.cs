@@ -64,5 +64,13 @@ namespace ProjectSalutis.core.Database
 			database.Commit();
 			return num;
 		}
+
+		public async Task<int> UpdateGoal(Goal goal)
+		{
+			var num = database.Update(goal);
+			database.Commit();
+			return num;
+		}
+
 	}
 }

@@ -55,7 +55,8 @@ namespace ProjectSalutis.core.ViewModels
 
 		private void OnAddPercentageClick()
 		{
-
+			Goal.AddPercentage();
+			database.UpdateGoal(Goal);
 		}
 
 		private void OnDeleteClick()
