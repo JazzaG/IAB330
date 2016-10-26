@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="5dp"
-	local:MvxBind="Click ClickCommand">
+    local:MvxBind="Click ClickCommand">
     <LinearLayout
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -16,7 +16,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Goal"
-            local:MvxBind="Text PercentageView"
+            local:MvxBind="Text Goal.PercentageView"
             android:layout_weight="1"
             android:textSize="36dp"
             android:layout_gravity="center_vertical" />
@@ -30,19 +30,19 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ride a Bike"
-                local:MvxBind="Text GoalType"
+                local:MvxBind="Text Goal.GoalType"
                 android:layout_weight="1" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="2 times every week"
-                local:MvxBind="Text QuantityView"
+                local:MvxBind="Text Goal.QuantityView"
                 android:layout_weight="1" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="for a month"
-                local:MvxBind="Text DurationView"
+                local:MvxBind="Text Goal.DurationView"
                 android:layout_weight="1" />
         </LinearLayout>
     </LinearLayout>

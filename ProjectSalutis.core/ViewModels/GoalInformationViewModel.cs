@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Windows.Input;
 using MvvmCross.Core.ViewModels;
 using ProjectSalutis.core.Interfaces;
 using ProjectSalutis.core.Models;
@@ -10,6 +11,22 @@ namespace ProjectSalutis.core.ViewModels
 	{
 
 		public Goal Goal { get; set; }
+
+		public ICommand AddPercentageClickCommand
+		{
+			get
+			{
+				return new MvxCommand(() => OnAddPercentageClick());	
+			}
+		}
+
+		public ICommand DeleteGoalClickCommand
+		{
+			get
+			{
+				return new MvxCommand(() => OnDeleteClick());
+			}
+		}
 
 		private IProjectDatabase database;
 
@@ -36,5 +53,14 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
+		private void OnAddPercentageClick()
+		{
+
+		}
+
+		private void OnDeleteClick()
+		{
+
+		}
 	}
 }
