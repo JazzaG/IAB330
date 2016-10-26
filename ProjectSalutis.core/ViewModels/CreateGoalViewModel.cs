@@ -29,6 +29,34 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
+		public List<string> Frequencies
+		{
+			get
+			{
+				return new List<string>()
+				{
+					"Every Day",
+					"Every Other Day",
+					"Every Week",
+					"Every Other Week",
+				};
+			}
+		}
+
+		public List<string> Durations
+		{
+			get
+			{
+				return new List<string>()
+				{
+					"For a Week",
+					"For two weeks",
+					"For a month",
+					"For three months",
+				};
+			}
+		}
+
 		public ICommand AddButtonClick
 		{
 			get
@@ -39,7 +67,7 @@ namespace ProjectSalutis.core.ViewModels
 
 		public void AddGoal()
 		{
-
+			
 		}
 
 

@@ -51,11 +51,11 @@
         android:layout_height="wrap_content"
         android:weightSum="2"
         android:padding="15dp">
-        <Spinner
+        <Mvx.MvxSpinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:entries="@array/goal_frequencies"
+            local:MvxBind="ItemsSource Frequencies; SelectedItem Frequency"
             android:id="@+id/goalFrequency" />
     </LinearLayout>
     <TextView
@@ -69,11 +69,11 @@
         android:layout_height="wrap_content"
         android:weightSum="2"
         android:padding="15dp">
-        <Spinner
+        <Mvx.MvxSpinner
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:entries="@array/goal_durations"
+            local:MvxBind="ItemsSource Durations; SelectedItem Duration"
             android:id="@+id/goalDuration" />
     </LinearLayout>
     <Button
