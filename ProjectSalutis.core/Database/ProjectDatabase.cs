@@ -18,6 +18,7 @@ namespace ProjectSalutis.core.Database
             var sqlite = Mvx.Resolve<ISqlite>();
             database = sqlite.GetConnection();
             database.CreateTable<JourneyEntry>();
+			database.CreateTable<Goal>();
         }
 
         public async Task<IEnumerable<JourneyEntry>> GetJourneyEntries()
