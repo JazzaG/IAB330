@@ -40,7 +40,7 @@ namespace ProjectSalutis.core.Models
 		{
 			get
 			{
-				int percentage = StepsCompleted / TotalSteps;
+				int percentage = StepsCompleted / TotalSteps * 100;
 				return percentage + "%";
 			}
 		}

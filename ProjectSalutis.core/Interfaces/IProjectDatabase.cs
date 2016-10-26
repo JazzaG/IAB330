@@ -13,7 +13,7 @@ namespace ProjectSalutis.core.Interfaces
 
 		Task<IEnumerable<Goal>> GetGoals();
 		Task<int> GetNumberOfGoals();
-		Task<int> DeleteGoal(object id);
+		Task<int> DeleteGoal(Goal goal);
 		Task<int> InsertGoal(Goal goal);
 		Task<int> UpdateGoal(Goal goal);
     }

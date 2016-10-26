@@ -53,9 +53,11 @@ namespace ProjectSalutis.core.Database
 			return database.Table<Goal>().Reverse().ToList();
 		}
 
-		public async Task<int> DeleteGoal(object id)
+		public async Task<int> DeleteGoal(Goal goal)
 		{
-			return database.Delete<Goal>(Convert.ToInt16(id));
+			var num = database.Delete(goal);
+			database.Commit();
+			return num;
 		}
 
 		public async Task<int> InsertGoal(Goal goal)

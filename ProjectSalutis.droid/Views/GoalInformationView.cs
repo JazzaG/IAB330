@@ -1,7 +1,10 @@
 ﻿using System;
 using Android.App;
 using Android.OS;
+using Android.Widget;
+using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Views;
+using ProjectSalutis.core.ViewModels;
 
 namespace ProjectSalutis.droid.Views
 {
@@ -12,6 +15,16 @@ namespace ProjectSalutis.droid.Views
 		{
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.GoalInformationView);
+
+			// Show toast if goal deleted
+			var viewModel = (GoalInformationViewModel)this.ViewModel;
+			new MvxPropertyChangedListener(viewModel).Listen<int>(
+				() => viewModel.GoalDeleted,
+				() =>
+				{
+					Toast.MakeText(this, "Goal deleted", ToastLength.Short).Show();
+				}
+			);
 		}
 	}
 }

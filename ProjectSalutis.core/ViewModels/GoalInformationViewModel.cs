@@ -6,7 +6,7 @@ using ProjectSalutis.core.Models;
 
 namespace ProjectSalutis.core.ViewModels
 {
-	public class GoalInformationViewModel 
+	public class GoalInformationViewModel
 		: MvxViewModel
 	{
 
@@ -16,7 +16,7 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			get
 			{
-				return new MvxCommand(() => OnAddPercentageClick());	
+				return new MvxCommand(() => OnAddPercentageClick());
 			}
 		}
 
@@ -57,11 +57,17 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			Goal.AddPercentage();
 			database.UpdateGoal(Goal);
+
+			RaisePropertyChanged(() => Goal);
 		}
+
+		public int GoalDeleted { get; set; }
 
 		private void OnDeleteClick()
 		{
-
+			database.DeleteGoal(Goal);
+			RaisePropertyChanged(() => GoalDeleted);
+			ShowViewModel<GoalListViewModel>();
 		}
 	}
 }
