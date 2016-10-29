@@ -23,14 +23,6 @@ namespace ProjectSalutis.core.ViewModels
             }
         }
 
-        public ICommand GoalCommand
-		{
-			get
-			{
-				return new MvxCommand(() => ShowViewModel<CreateGoalViewModel>());
-			}
-		}
-
 		public ICommand ContactCommand
 		{
 			get

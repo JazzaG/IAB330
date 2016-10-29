@@ -155,6 +155,9 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f050003
 			public const int cardview_shadow_start_color = 2131034115;
 			
+			// aapt resource value: 0x7f050004
+			public const int theme_devicedefault_background = 2131034116;
+			
 			static Color()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -218,8 +221,8 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f080008
 			public const int add_button = 2131230728;
 			
-			// aapt resource value: 0x7f080010
-			public const int button1 = 2131230736;
+			// aapt resource value: 0x7f080019
+			public const int button1 = 2131230745;
 			
 			// aapt resource value: 0x7f080013
 			public const int buttonContact = 2131230739;
@@ -232,6 +235,9 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f080007
 			public const int cancel_button = 2131230727;
+			
+			// aapt resource value: 0x7f080010
+			public const int changeview_button = 2131230736;
 			
 			// aapt resource value: 0x7f080014
 			public const int editText1 = 2131230740;
@@ -373,6 +379,9 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f040003
 			public const int CardView_Light = 2130968579;
+			
+			// aapt resource value: 0x7f040005
+			public const int Theme_Custom = 2130968581;
 			
 			// aapt resource value: 0x7f040004
 			public const int Theme_Splash = 2130968580;
