@@ -155,9 +155,6 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f050003
 			public const int cardview_shadow_start_color = 2131034115;
 			
-			// aapt resource value: 0x7f050004
-			public const int theme_devicedefault_background = 2131034116;
-			
 			static Color()
 			{
 				global::Android.Runtime.ResourceIdManager.UpdateIdValues();
@@ -379,9 +376,6 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f040003
 			public const int CardView_Light = 2130968579;
-			
-			// aapt resource value: 0x7f040005
-			public const int Theme_Custom = 2130968581;
 			
 			// aapt resource value: 0x7f040004
 			public const int Theme_Splash = 2130968580;
