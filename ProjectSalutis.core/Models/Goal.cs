@@ -3,78 +3,69 @@ namespace ProjectSalutis.core.Models
 {
 	public class Goal
 	{
+		public int GoalId { get; set; }
+		public string GoalType { get; set; }
+		public string Quantity { get; set; }
+		public string Frequency { get; set; }
+		public string Duration { get; set; }
 
-		private int percentageCompleted;
-		public int PercentageCompleted
+		public int StepsCompleted { get; set; }
+		public int TotalSteps { get; set; }
+
+		public string QuantityView
 		{
 			get
 			{
-				return percentageCompleted;
-			}
+				string view = Quantity + " time";
+				if (Int32.Parse(Quantity) > 1)
+				{
+					view += "s";
+				}
 
-			set
-			{
-				percentageCompleted = value;
+				view += " every " + Frequency;
+
+				return view;
 			}
 		}
 
-		private int quantity;
-		public int Quantity
+		public string DurationView
 		{
 			get
 			{
-				return quantity;
-			}
-
-			set
-			{
-				quantity = value;
+				return "for " + Duration;
 			}
 		}
 
-		private GoalType goalType;
-		public GoalType GoalType
+		public string PercentageView
 		{
 			get
 			{
-				return goalType;
-			}
-
-			set
-			{
-				goalType = value;
+				int percentage = StepsCompleted / TotalSteps * 100;
+				return percentage + "%";
 			}
 		}
 
-		private DateTime endDate;
-		public DateTime EndDate
+		public Goal()
 		{
-			get
-			{
-				return endDate;
-			}
 
-			set
-			{
-				endDate = value;
-			}
 		}
 
-		private int frequencyInSeconds;
-		public int Frequency { get { return frequencyInSeconds; } }
-
-		public Goal(GoalType goalType, int quantity, int frequency, DateTime endDate)
+		public Goal(int id, string goalType, string quantity, string frequency, string duration, int totalSteps)
 		{
-			this.percentageCompleted = 0;
-			this.quantity = quantity;
-			this.goalType = goalType;
-			this.frequencyInSeconds = frequency;
-			this.endDate = endDate;
+			this.GoalId = id;
+			this.GoalType = goalType;
+			this.Quantity = quantity;
+			this.Frequency = frequency;
+			this.Duration = duration;
+			this.TotalSteps = totalSteps;
+
+			this.StepsCompleted = 0;
 		}
 
-
-
-
+		public void AddPercentage()
+		{
+			this.StepsCompleted += 1;
+		}
 
 
 	}

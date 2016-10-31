@@ -11,6 +11,8 @@
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+		android:divider="@null"
+		android:dividerHeight="0dp"
         local:MvxBind="ItemsSource Goals; ItemClick GoalClickCommand"
         local:MvxItemTemplate="@layout/goallistlayout" />
 </LinearLayout>

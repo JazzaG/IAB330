@@ -42,8 +42,9 @@
     <Compile Include="ViewModels\NewContactViewModel.cs" />
     <Compile Include="ViewModels\CreateGoalViewModel.cs" />
     <Compile Include="Models\Goal.cs" />
-    <Compile Include="Models\GoalType.cs" />
     <Compile Include="ViewModels\GoalListViewModel.cs" />
+    <Compile Include="ViewModels\GoalInformationViewModel.cs" />
+    <Compile Include="Models\GoalListWrapper.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="MvvmCross.Platform">

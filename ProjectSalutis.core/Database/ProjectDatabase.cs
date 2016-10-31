@@ -18,6 +18,7 @@ namespace ProjectSalutis.core.Database
             var sqlite = Mvx.Resolve<ISqlite>();
             database = sqlite.GetConnection();
             database.CreateTable<JourneyEntry>();
+			database.CreateTable<Goal>();
         }
 
         public async Task<IEnumerable<JourneyEntry>> GetJourneyEntries()
@@ -42,14 +43,21 @@ namespace ProjectSalutis.core.Database
             return await InsertJourneyEntry(new JourneyEntry(category, rating));
         }
 
+		public async Task<int> GetNumberOfGoals()
+		{
+			return database.Table<Goal>().ToList().Count;
+		}
+
 		public async Task<IEnumerable<Goal>> GetGoals()
 		{
 			return database.Table<Goal>().Reverse().ToList();
 		}
 
-		public async Task<int> DeleteGoal(object id)
+		public async Task<int> DeleteGoal(Goal goal)
 		{
-			return database.Delete<Goal>(Convert.ToInt16(id));
+			var num = database.Delete(goal);
+			database.Commit();
+			return num;
 		}
 
 		public async Task<int> InsertGoal(Goal goal)
@@ -58,5 +66,13 @@ namespace ProjectSalutis.core.Database
 			database.Commit();
 			return num;
 		}
+
+		public async Task<int> UpdateGoal(Goal goal)
+		{
+			var num = database.Update(goal);
+			database.Commit();
+			return num;
+		}
+
 	}
 }
