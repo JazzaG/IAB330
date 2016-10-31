@@ -19,7 +19,7 @@ namespace ProjectSalutis.core.ViewModels
         {
             get
             {
-                return new MvxCommand(() => ShowViewModel<CreateGoalViewModel>());
+				return new MvxCommand(() => ShowViewModel<GoalListViewModel>());
             }
         }
 
@@ -28,14 +28,6 @@ namespace ProjectSalutis.core.ViewModels
 			get
 			{
 				return new MvxCommand(() => ShowViewModel<NewContactViewModel>());
-			}
-		}
-
-		public ICommand GoalListCommand
-		{
-			get
-			{
-				return new MvxCommand(() => ShowViewModel<GoalListViewModel>());
 			}
 		}
 
