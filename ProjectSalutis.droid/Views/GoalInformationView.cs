@@ -26,6 +26,35 @@ namespace ProjectSalutis.droid.Views
 					Toast.MakeText(this, "Goal deleted", ToastLength.Short).Show();
 				}
 			);
+
+			// Show dialog to create new journey entry if goal is completed
+			new MvxPropertyChangedListener(viewModel).Listen<bool>(
+				() => viewModel.GoalCompleted,
+				() =>
+				{
+					this.HandleCompletedGoal(viewModel);
+				}
+			);
+		}
+
+		private void HandleCompletedGoal(GoalInformationViewModel viewModel)
+		{
+			// Show a dialog to take the user to AddToJourneyView
+			AlertDialog.Builder builder = new AlertDialog.Builder(this);
+			builder
+				.SetTitle("Congratulations!")
+				.SetMessage("Well done on completing a goal. Would you like to add a journey entry?")
+				.SetNegativeButton("Not now", (sender, e) =>
+				{
+				
+				})
+				.SetPositiveButton("Sure", (sender, e) =>
+				{
+					viewModel.GoToAddJourneyEntry();
+				});
+
+			Dialog dialog = builder.Create();
+			dialog.Show();
 		}
 	}
 }

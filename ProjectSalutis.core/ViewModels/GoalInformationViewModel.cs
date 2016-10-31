@@ -28,6 +28,8 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
+		public bool GoalCompleted { get; set; }
+
 		private IProjectDatabase database;
 
 		public GoalInformationViewModel(IProjectDatabase database)
@@ -59,6 +61,12 @@ namespace ProjectSalutis.core.ViewModels
 			database.UpdateGoal(Goal);
 
 			RaisePropertyChanged(() => Goal);
+
+			// Notify view if goal is completed
+			if (Goal.StepsCompleted >= Goal.TotalSteps)
+			{
+				RaisePropertyChanged(() => GoalCompleted);
+			}
 		}
 
 		public int GoalDeleted { get; set; }
@@ -68,6 +76,11 @@ namespace ProjectSalutis.core.ViewModels
 			database.DeleteGoal(Goal);
 			RaisePropertyChanged(() => GoalDeleted);
 			ShowViewModel<GoalListViewModel>();
+		}
+
+		public void GoToAddJourneyEntry()
+		{
+			ShowViewModel<AddtoJourneyViewModel>();
 		}
 	}
 }
