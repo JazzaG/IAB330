@@ -6,13 +6,18 @@
     android:layout_height="fill_parent"
     android:gravity="center_horizontal"
     android:padding="5dp">
+    <Button
+        local:MvxBind="Click CreateGoalButtonClick"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NEW GOAL" />
     <MvvmCross.Binding.Droid.Views.MvxListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-		android:divider="@null"
-		android:dividerHeight="0dp"
+        android:divider="@null"
+        android:dividerHeight="0dp"
         local:MvxBind="ItemsSource Goals; ItemClick GoalClickCommand"
         local:MvxItemTemplate="@layout/goallistlayout" />
 </LinearLayout>

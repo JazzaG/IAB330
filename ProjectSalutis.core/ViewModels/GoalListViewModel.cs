@@ -18,6 +18,14 @@ namespace ProjectSalutis.core.ViewModels
 			set { SetProperty(ref goals, value); }
 		}
 
+		public ICommand CreateGoalButtonClick
+		{
+			get
+			{
+				return new MvxCommand(() => OnCreateGoalClick());
+			}
+		}
+
 		private IProjectDatabase database;
 
 		public GoalListViewModel(IProjectDatabase database)
@@ -38,6 +46,11 @@ namespace ProjectSalutis.core.ViewModels
 			{
 				Goals.Add(new GoalListWrapper(entry, this));
 			}
+		}
+
+		public void OnCreateGoalClick()
+		{
+			ShowViewModel<CreateGoalViewModel>();
 		}
 
 		public void OnGoalClick(Goal goal)
