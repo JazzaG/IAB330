@@ -40,8 +40,15 @@ namespace ProjectSalutis.core.Models
 		{
 			get
 			{
-				int percentage = StepsCompleted / TotalSteps * 100;
-				return percentage + "%";
+				double percentage = (double) StepsCompleted / TotalSteps * 100;
+
+				string val = percentage + "";
+				if (val.Contains("."))
+				{
+					val = val.Split('.')[0];
+				}
+
+				return val + "%";
 			}
 		}
 
@@ -64,7 +71,10 @@ namespace ProjectSalutis.core.Models
 
 		public void AddPercentage()
 		{
-			this.StepsCompleted += 1;
+			if (StepsCompleted < TotalSteps)
+			{
+				this.StepsCompleted += 1;
+			}
 		}
 
 
