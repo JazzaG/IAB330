@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ProjectSalutis.core.Models
 {
-    public class ContacsEntry
+    public class ContactsEntry
     {
         public ContactsEntry() { }
 
