@@ -384,7 +384,16 @@ namespace ProjectSalutis.droid
 			public const int CardView_Light = 2130968579;
 			
 			// aapt resource value: 0x7f040004
-			public const int Theme_Splash = 2130968580;
+			public const int Theme_App = 2130968580;
+			
+			// aapt resource value: 0x7f040006
+			public const int Theme_App_ActionBar_Title = 2130968582;
+			
+			// aapt resource value: 0x7f040005
+			public const int Theme_App_ActionBarTheme = 2130968581;
+			
+			// aapt resource value: 0x7f040007
+			public const int Theme_Splash = 2130968583;
 			
 			static Style()
 			{
