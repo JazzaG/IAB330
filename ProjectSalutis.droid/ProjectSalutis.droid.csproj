@@ -133,6 +133,7 @@
     <AndroidResource Include="Resources\drawable\logo.png" />
     <AndroidResource Include="Resources\layout\GoalInformationView.axml" />
     <AndroidResource Include="Resources\values\AppTheme.xml" />
+    <AndroidResource Include="Resources\drawable\ic_notification.png" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />
