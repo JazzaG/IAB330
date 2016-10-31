@@ -8,7 +8,8 @@ using ProjectSalutis.core.ViewModels;
 
 namespace ProjectSalutis.droid.Views
 {
-	[Activity(Label = "Your Goal")]
+	[Activity(Label = "Your Goal"
+	          , ParentActivity = typeof(GoalListView))]
 	public class GoalInformationView : MvxActivity
 	{
 		protected override void OnCreate(Bundle bundle)

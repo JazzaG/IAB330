@@ -10,6 +10,7 @@ namespace ProjectSalutis.droid.Views
 {
 	[Activity(
 		Label = "Goals"
+		, ParentActivity = typeof(NavigationView)
 		, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class GoalListView : MvxActivity
 	{
