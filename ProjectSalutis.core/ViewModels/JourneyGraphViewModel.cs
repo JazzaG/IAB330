@@ -3,11 +3,10 @@ using OxyPlot;
 using OxyPlot.Axes;
 using OxyPlot.Series;
 using ProjectSalutis.core.Interfaces;
-using System.Windows.Input;
 
 namespace ProjectSalutis.core.ViewModels
 {
-    public class GraphViewModel : MvxViewModel
+    public class JourneyGraphViewModel : MvxViewModel
     {
         private PlotModel plotModel;
         public PlotModel PlotModel
@@ -18,23 +17,12 @@ namespace ProjectSalutis.core.ViewModels
 
         private readonly IProjectDatabase projectDatabase;
 
-        public ICommand AddJourneyCommand { get; private set; }
-        public ICommand ChangeViewCommand { get; private set; }
-
-        public GraphViewModel(IProjectDatabase projectDatabase)
+        public JourneyGraphViewModel(IProjectDatabase projectDatabase)
         {
             this.projectDatabase = projectDatabase;
             PlotModel = new PlotModel();
             PlotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd MMM yy", AxislineColor = OxyColors.White, TextColor = OxyColors.White });
             PlotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = -0.5, Maximum = 10.5, AxislineColor = OxyColors.White, TextColor = OxyColors.White, IsZoomEnabled = false, IsPanEnabled = false });
-            AddJourneyCommand = new MvxCommand(() => ShowViewModel<AddtoJourneyViewModel>());
-            ChangeViewCommand = new MvxCommand(() => ChangeView());
-        }
-
-        private void ChangeView()
-        {
-            Close(this);
-            ShowViewModel<JourneyViewModel>();
         }
 
         public void OnResume()

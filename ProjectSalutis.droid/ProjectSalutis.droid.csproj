@@ -92,8 +92,9 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
+    <Compile Include="Views\JourneyListView.cs" />
     <Compile Include="Views\NavigationView.cs" />
-    <Compile Include="Views\GraphView.cs" />
+    <Compile Include="Views\JourneyGraphView.cs" />
     <Compile Include="Views\JourneyView.cs" />
     <Compile Include="Views\NewContactView.cs" />
     <Compile Include="Views\CreateGoalView.cs" />
@@ -122,7 +123,10 @@
     <AndroidResource Include="Resources\layout\CreateGoalView.axml" />
     <AndroidResource Include="Resources\layout\GoalListView.axml" />
     <AndroidResource Include="Resources\layout\GoalListLayout.axml" />
-    <AndroidResource Include="Resources\layout\GraphView.axml">
+    <AndroidResource Include="Resources\layout\JourneyGraphView.axml">
+      <SubType>Designer</SubType>
+    </AndroidResource>
+    <AndroidResource Include="Resources\layout\JourneyListView.axml">
       <SubType>Designer</SubType>
     </AndroidResource>
   </ItemGroup>
