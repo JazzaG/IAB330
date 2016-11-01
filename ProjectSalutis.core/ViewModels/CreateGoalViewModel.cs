@@ -11,13 +11,9 @@ namespace ProjectSalutis.core.ViewModels
 		: MvxViewModel
 	{
 
-		public string GoalType { get; set; }
-		public string Quantity { get; set; }
-		public string Frequency { get; set; }
-		public string Duration { get; set; }
+		public Goal Goal { get; set; }
 
 		public bool AddButtonClicked { get; set; }
-		public int Steps { get; set; }
 
 		public List<string> GoalTypes
 		{
@@ -77,21 +73,24 @@ namespace ProjectSalutis.core.ViewModels
 		public CreateGoalViewModel(IProjectDatabase database)
 		{
 			this.database = database;
+
+            this.Goal = new Goal();
+            this.Goal.StepsCompleted = 0;
 		}
 
 		public void AddGoal()
 		{
 			// If quantity is empty, set it to 1
-			if (Quantity == "" || Quantity == null)
+			if (Goal.Quantity == "" || Goal.Quantity == null)
 			{
-				Quantity = "1";
+                Goal.Quantity = "1";
 			}
 
-			// Create model
-            Goal goal = CreateGoalInstance();
+            // Calculate steps
+            Goal.TotalSteps = CalculateTotalSteps();
 
 			// Store goal in database
-			this.database.InsertGoal(goal);
+			this.database.InsertGoal(Goal);
 
 			// Notifiy listeners that button was clicked
 			RaisePropertyChanged(() => AddButtonClicked);
@@ -99,30 +98,16 @@ namespace ProjectSalutis.core.ViewModels
 			// Navigation to goal list view
 			ShowViewModel<GoalViewModel>();
 		}
-
-        private Goal CreateGoalInstance()
-        {
-            Goal goal = new Goal();
-            goal.GoalType = GoalType;
-            goal.Quantity = Quantity;
-            goal.Frequency = Frequency;
-            goal.Duration = Duration;
-
-            goal.StepsCompleted = 0;
-            goal.TotalSteps = CalculateTotalSteps();
-
-            return goal;
-        }
-
+        
 		private int CalculateTotalSteps()
 		{
 			// steps = (durationAsDays / freqAsDays) * numOfTimes
-			int numOfTimes = Int32.Parse(Quantity);
+			int numOfTimes = Int32.Parse(Goal.Quantity);
 			int frequencyAsDay = 0;
 			int durationAsDay = 0;
 
 			// Find frequency as days
-			switch (Frequency)
+			switch (Goal.Frequency)
 			{
 				case "Day":
 					frequencyAsDay = 1;
@@ -139,7 +124,7 @@ namespace ProjectSalutis.core.ViewModels
 			}
 
 			// Find duration as days
-			switch (Duration)
+			switch (Goal.Duration)
 			{
 				case "1 Week":
 					durationAsDay = 7;

@@ -31,7 +31,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:entries="@array/goal_types"
-                    local:MvxBind="ItemsSource GoalTypes; SelectedItem GoalType"
+                    local:MvxBind="ItemsSource GoalTypes; SelectedItem Goal.GoalType"
                     android:id="@+id/goalType" />
                 <LinearLayout
                     android:orientation="horizontal"
@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:id="@+id/goalQuantity"
-                        local:MvxBind="Text Quantity"
+                        local:MvxBind="Text Goal.Quantity"
                         android:numeric="integer"
                         android:inputType="number"
                         android:password="false"
@@ -78,7 +78,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                local:MvxBind="ItemsSource Frequencies; SelectedItem Frequency"
+                local:MvxBind="ItemsSource Frequencies; SelectedItem Goal.Frequency"
                 android:id="@+id/goalFrequency" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
@@ -101,7 +101,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
-                local:MvxBind="ItemsSource Durations; SelectedItem Duration"
+                local:MvxBind="ItemsSource Durations; SelectedItem Goal.Duration"
                 android:id="@+id/goalDuration" />
         </LinearLayout>
     </android.support.v7.widget.CardView>
