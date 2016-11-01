@@ -62,15 +62,15 @@ namespace ProjectSalutis.core.ViewModels
         {
             this.journeyDatabase = journeyDatabase;
             CancelJourneyCommand = new MvxCommand(() => Close(this));
-            if (NotesText == "" || NotesText == null)
-            {
-                NotesText = "No Notes";
-            }
             AddJourneyCommand = new MvxCommand(() => AddEntry(CategorySelection, SliderValue, NotesText));
         }
 
         public async void AddEntry(string category, int rating, string notes)
         {
+            if (notes == "" || notes == null)
+            {
+                notes = "No Notes";
+            }
             await journeyDatabase.InsertJourneyEntry(category, rating, notes);
             Close(this);
         }
