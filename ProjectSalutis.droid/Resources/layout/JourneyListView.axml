@@ -1,16 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:local="http://schemas.android.com/apk/res-auto"
-    android:orientation="vertical"
     android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:gravity="center_horizontal"
-    android:padding="5dp">
+    android:layout_height="fill_parent">
     <MvvmCross.Binding.Droid.Views.MvxListView
         android:minWidth="25px"
         android:minHeight="25px"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        local:MvxBind="ItemsSource Goals; ItemClick GoalClickCommand"
-        local:MvxItemTemplate="@layout/goallistlayout" />
+        local:MvxBind="ItemsSource Entries"
+        local:MvxItemTemplate="@layout/journeyentrylayout" />
 </LinearLayout>

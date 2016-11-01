@@ -6,11 +6,13 @@ namespace ProjectSalutis.core.Interfaces
 {
     public interface IProjectDatabase
     {
-        Task<IEnumerable<JourneyEntry>> GetEntries();
+        Task<IEnumerable<JourneyEntry>> GetJourneyEntries();
+        Task<int> DeleteJourneyEntry(object id);
+        Task<int> InsertJourneyEntry(JourneyEntry entry);
+        Task<int> InsertJourneyEntry(string category, int rating);
 
-        Task<int> DeleteEntry(object id);
-
-        Task<int> InsertEntry(JourneyEntry entry);
-        Task<int> InsertEntry(string category, int rating);
+		Task<IEnumerable<Goal>> GetGoals();
+		Task<int> DeleteGoal(object id);
+		Task<int> InsertGoal(Goal goal);
     }
 }

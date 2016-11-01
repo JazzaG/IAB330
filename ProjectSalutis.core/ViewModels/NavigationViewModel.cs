@@ -3,7 +3,7 @@ using MvvmCross.Core.ViewModels;
 
 namespace ProjectSalutis.core.ViewModels
 {
-    public class FirstViewModel 
+    public class NavigationViewModel 
         : MvxViewModel
     {
 
@@ -15,13 +15,13 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
-		public ICommand GoalCommand
-		{
-			get
-			{
-				return new MvxCommand(() => ShowViewModel<CreateGoalViewModel>());
-			}
-		}
+        public ICommand GoalCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<CreateGoalViewModel>());
+            }
+        }
 
 		public ICommand ContactCommand
 		{

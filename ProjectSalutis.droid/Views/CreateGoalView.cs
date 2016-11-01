@@ -18,13 +18,6 @@ namespace ProjectSalutis.droid.Views
 		{
 			base.OnCreate(bundle);
 			SetContentView(Resource.Layout.CreateGoalView);
-
-			// Show a toast when the add button is clicked
-			Button button = FindViewById<Button>(Resource.Id.goalAdd);
-			button.Click += delegate {
-				Log.Info("EventHandler", "Add button clicked");
-				Toast.MakeText(this, "Add button clicked", ToastLength.Short).Show();
-			};
 		}
 
 	}

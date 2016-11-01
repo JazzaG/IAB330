@@ -11,7 +11,7 @@ namespace ProjectSalutis.core
                 .AsInterfaces()
                 .RegisterAsLazySingleton();
 
-            RegisterAppStart<ViewModels.FirstViewModel>();
+            RegisterAppStart<ViewModels.NavigationViewModel>();
         }
     }
 }

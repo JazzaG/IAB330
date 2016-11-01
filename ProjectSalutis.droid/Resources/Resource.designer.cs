@@ -111,6 +111,7 @@ namespace ProjectSalutis.droid
 		public partial class Attribute
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f01000a
 			public const int MvxBind = 2130771978;
 			
@@ -161,6 +162,61 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f010003
 			public const int stackFromEnd = 2130771971;
+=======
+			// aapt resource value: 0x7f01000b
+			public const int MvxBind = 2130771979;
+			
+			// aapt resource value: 0x7f01000f
+			public const int MvxDropDownItemTemplate = 2130771983;
+			
+			// aapt resource value: 0x7f010010
+			public const int MvxGroupItemTemplate = 2130771984;
+			
+			// aapt resource value: 0x7f01000e
+			public const int MvxItemTemplate = 2130771982;
+			
+			// aapt resource value: 0x7f01000c
+			public const int MvxLang = 2130771980;
+			
+			// aapt resource value: 0x7f010011
+			public const int MvxSource = 2130771985;
+			
+			// aapt resource value: 0x7f01000d
+			public const int MvxTemplate = 2130771981;
+			
+			// aapt resource value: 0x7f010000
+			public const int cardBackgroundColor = 2130771968;
+			
+			// aapt resource value: 0x7f010001
+			public const int cardCornerRadius = 2130771969;
+			
+			// aapt resource value: 0x7f010002
+			public const int cardElevation = 2130771970;
+			
+			// aapt resource value: 0x7f010003
+			public const int cardMaxElevation = 2130771971;
+			
+			// aapt resource value: 0x7f010005
+			public const int cardPreventCornerOverlap = 2130771973;
+			
+			// aapt resource value: 0x7f010004
+			public const int cardUseCompatPadding = 2130771972;
+			
+			// aapt resource value: 0x7f010006
+			public const int contentPadding = 2130771974;
+			
+			// aapt resource value: 0x7f01000a
+			public const int contentPaddingBottom = 2130771978;
+			
+			// aapt resource value: 0x7f010007
+			public const int contentPaddingLeft = 2130771975;
+			
+			// aapt resource value: 0x7f010008
+			public const int contentPaddingRight = 2130771976;
+			
+			// aapt resource value: 0x7f010009
+			public const int contentPaddingTop = 2130771977;
+>>>>>>> master
 			
 			static Attribute()
 			{
@@ -175,8 +231,22 @@ namespace ProjectSalutis.droid
 		public partial class Color
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f070000
 			public const int fab_material_blue_500 = 2131165184;
+=======
+			// aapt resource value: 0x7f050000
+			public const int cardview_dark_background = 2131034112;
+			
+			// aapt resource value: 0x7f050001
+			public const int cardview_light_background = 2131034113;
+			
+			// aapt resource value: 0x7f050002
+			public const int cardview_shadow_end_color = 2131034114;
+			
+			// aapt resource value: 0x7f050003
+			public const int cardview_shadow_start_color = 2131034115;
+>>>>>>> master
 			
 			static Color()
 			{
@@ -191,6 +261,7 @@ namespace ProjectSalutis.droid
 		public partial class Dimension
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f040005
 			public const int fab_elevation_lollipop = 2130968581;
 			
@@ -208,6 +279,16 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f040000
 			public const int item_touch_helper_max_drag_scroll_per_frame = 2130968576;
+=======
+			// aapt resource value: 0x7f060000
+			public const int cardview_compat_inset_shadow = 2131099648;
+			
+			// aapt resource value: 0x7f060001
+			public const int cardview_default_elevation = 2131099649;
+			
+			// aapt resource value: 0x7f060002
+			public const int cardview_default_radius = 2131099650;
+>>>>>>> master
 			
 			static Dimension()
 			{
@@ -250,6 +331,7 @@ namespace ProjectSalutis.droid
 		public partial class Id
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f050001
 			public const int MvvmCrossTagId = 2131034113;
 			
@@ -330,6 +412,82 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f050006
 			public const int textView1 = 2131034118;
+=======
+			// aapt resource value: 0x7f080000
+			public const int MvvmCrossTagId = 2131230720;
+			
+			// aapt resource value: 0x7f080001
+			public const int MvxBindingTagUnique = 2131230721;
+			
+			// aapt resource value: 0x7f080008
+			public const int add_button = 2131230728;
+			
+			// aapt resource value: 0x7f080018
+			public const int button1 = 2131230744;
+			
+			// aapt resource value: 0x7f080012
+			public const int buttonContact = 2131230738;
+			
+			// aapt resource value: 0x7f080011
+			public const int buttonGoal = 2131230737;
+			
+			// aapt resource value: 0x7f080010
+			public const int buttonJourney = 2131230736;
+			
+			// aapt resource value: 0x7f080007
+			public const int cancel_button = 2131230727;
+			
+			// aapt resource value: 0x7f080013
+			public const int editText1 = 2131230739;
+			
+			// aapt resource value: 0x7f080014
+			public const int editText2 = 2131230740;
+			
+			// aapt resource value: 0x7f080015
+			public const int editText3 = 2131230741;
+			
+			// aapt resource value: 0x7f080016
+			public const int editText4 = 2131230742;
+			
+			// aapt resource value: 0x7f080017
+			public const int editText5 = 2131230743;
+			
+			// aapt resource value: 0x7f080004
+			public const int feeling_scale = 2131230724;
+			
+			// aapt resource value: 0x7f080005
+			public const int feeling_seekbar = 2131230725;
+			
+			// aapt resource value: 0x7f08000e
+			public const int goalAdd = 2131230734;
+			
+			// aapt resource value: 0x7f08000d
+			public const int goalDuration = 2131230733;
+			
+			// aapt resource value: 0x7f08000c
+			public const int goalFrequency = 2131230732;
+			
+			// aapt resource value: 0x7f08000b
+			public const int goalQuantifier = 2131230731;
+			
+			// aapt resource value: 0x7f08000a
+			public const int goalQuantity = 2131230730;
+			
+			// aapt resource value: 0x7f080009
+			public const int goalType = 2131230729;
+			
+			// aapt resource value: 0x7f080002
+			public const int journey_spinner = 2131230722;
+			
+			// aapt resource value: 0x7f080006
+			public const int notes_edittext = 2131230726;
+			
+			// aapt resource value: 0x7f08000f
+			public const int plot = 2131230735;
+			
+			// aapt resource value: 0x7f080003
+			public const int textView1 = 2131230723;
+>>>>>>> master
 			
 			static Id()
 			{
@@ -351,7 +509,11 @@ namespace ProjectSalutis.droid
 			public const int Contacts = 2130903041;
 			
 			// aapt resource value: 0x7f030002
+<<<<<<< HEAD
 			public const int ContactsEntryLayout = 2130903042;
+=======
+			public const int GoalListLayout = 2130903042;
+>>>>>>> master
 			
 			// aapt resource value: 0x7f030003
 			public const int CreateGoalView = 2130903043;
@@ -360,16 +522,27 @@ namespace ProjectSalutis.droid
 			public const int FirstView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
+<<<<<<< HEAD
 			public const int GoalListView = 2130903045;
 			
 			// aapt resource value: 0x7f030006
 			public const int JourneyEntryLayout = 2130903046;
+=======
+			public const int JourneyGraphView = 2130903045;
+			
+			// aapt resource value: 0x7f030006
+			public const int JourneyListView = 2130903046;
+>>>>>>> master
 			
 			// aapt resource value: 0x7f030007
 			public const int JourneyView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
+<<<<<<< HEAD
 			public const int ListItem_Goal = 2130903048;
+=======
+			public const int NavigationView = 2130903048;
+>>>>>>> master
 			
 			// aapt resource value: 0x7f030009
 			public const int NewContactView = 2130903049;
@@ -390,6 +563,7 @@ namespace ProjectSalutis.droid
 		public partial class String
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f060001
 			public const int ApplicationName = 2131099649;
 			
@@ -398,6 +572,16 @@ namespace ProjectSalutis.droid
 			
 			// aapt resource value: 0x7f060002
 			public const int app_name = 2131099650;
+=======
+			// aapt resource value: 0x7f070001
+			public const int ApplicationName = 2131165185;
+			
+			// aapt resource value: 0x7f070000
+			public const int Hello = 2131165184;
+			
+			// aapt resource value: 0x7f070002
+			public const int app_name = 2131165186;
+>>>>>>> master
 			
 			static String()
 			{
@@ -412,8 +596,25 @@ namespace ProjectSalutis.droid
 		public partial class Style
 		{
 			
+<<<<<<< HEAD
 			// aapt resource value: 0x7f080000
 			public const int Theme_Splash = 2131230720;
+=======
+			// aapt resource value: 0x7f040001
+			public const int Base_CardView = 2130968577;
+			
+			// aapt resource value: 0x7f040000
+			public const int CardView = 2130968576;
+			
+			// aapt resource value: 0x7f040002
+			public const int CardView_Dark = 2130968578;
+			
+			// aapt resource value: 0x7f040003
+			public const int CardView_Light = 2130968579;
+			
+			// aapt resource value: 0x7f040004
+			public const int Theme_Splash = 2130968580;
+>>>>>>> master
 			
 			static Style()
 			{
@@ -428,12 +629,23 @@ namespace ProjectSalutis.droid
 		public partial class Styleable
 		{
 			
+<<<<<<< HEAD
 			public static int[] FloatingActionButton = new int[] {
+=======
+			public static int[] CardView = new int[] {
+					16843071,
+					16843072,
+					2130771968,
+					2130771969,
+					2130771970,
+					2130771971,
+>>>>>>> master
 					2130771972,
 					2130771973,
 					2130771974,
 					2130771975,
 					2130771976,
+<<<<<<< HEAD
 					2130771977};
 			
 			// aapt resource value: 2
@@ -457,6 +669,53 @@ namespace ProjectSalutis.droid
 			public static int[] MvxBinding = new int[] {
 					2130771978,
 					2130771979};
+=======
+					2130771977,
+					2130771978};
+			
+			// aapt resource value: 1
+			public const int CardView_android_minHeight = 1;
+			
+			// aapt resource value: 0
+			public const int CardView_android_minWidth = 0;
+			
+			// aapt resource value: 2
+			public const int CardView_cardBackgroundColor = 2;
+			
+			// aapt resource value: 3
+			public const int CardView_cardCornerRadius = 3;
+			
+			// aapt resource value: 4
+			public const int CardView_cardElevation = 4;
+			
+			// aapt resource value: 5
+			public const int CardView_cardMaxElevation = 5;
+			
+			// aapt resource value: 7
+			public const int CardView_cardPreventCornerOverlap = 7;
+			
+			// aapt resource value: 6
+			public const int CardView_cardUseCompatPadding = 6;
+			
+			// aapt resource value: 8
+			public const int CardView_contentPadding = 8;
+			
+			// aapt resource value: 12
+			public const int CardView_contentPaddingBottom = 12;
+			
+			// aapt resource value: 9
+			public const int CardView_contentPaddingLeft = 9;
+			
+			// aapt resource value: 10
+			public const int CardView_contentPaddingRight = 10;
+			
+			// aapt resource value: 11
+			public const int CardView_contentPaddingTop = 11;
+			
+			public static int[] MvxBinding = new int[] {
+					2130771979,
+					2130771980};
+>>>>>>> master
 			
 			// aapt resource value: 0
 			public const int MvxBinding_MvxBind = 0;
@@ -465,26 +724,43 @@ namespace ProjectSalutis.droid
 			public const int MvxBinding_MvxLang = 1;
 			
 			public static int[] MvxControl = new int[] {
+<<<<<<< HEAD
 					2130771980};
+=======
+					2130771981};
+>>>>>>> master
 			
 			// aapt resource value: 0
 			public const int MvxControl_MvxTemplate = 0;
 			
 			public static int[] MvxExpandableListView = new int[] {
+<<<<<<< HEAD
 					2130771983};
+=======
+					2130771984};
+>>>>>>> master
 			
 			// aapt resource value: 0
 			public const int MvxExpandableListView_MvxGroupItemTemplate = 0;
 			
 			public static int[] MvxImageView = new int[] {
+<<<<<<< HEAD
 					2130771984};
+=======
+					2130771985};
+>>>>>>> master
 			
 			// aapt resource value: 0
 			public const int MvxImageView_MvxSource = 0;
 			
 			public static int[] MvxListView = new int[] {
+<<<<<<< HEAD
 					2130771981,
 					2130771982};
+=======
+					2130771982,
+					2130771983};
+>>>>>>> master
 			
 			// aapt resource value: 1
 			public const int MvxListView_MvxDropDownItemTemplate = 1;
