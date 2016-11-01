@@ -87,8 +87,7 @@ namespace ProjectSalutis.core.ViewModels
 			}
 
 			// Create model
-			int id = database.GetNumberOfGoals().Result + 1;
-			Goal goal = new Goal(id, GoalType, Quantity, Frequency, Duration, CalculateTotalSteps());
+            Goal goal = CreateGoalInstance();
 
 			// Store goal in database
 			this.database.InsertGoal(goal);
@@ -99,6 +98,20 @@ namespace ProjectSalutis.core.ViewModels
 			// Navigation to goal list view
 			ShowViewModel<GoalListViewModel>();
 		}
+
+        private Goal CreateGoalInstance()
+        {
+            Goal goal = new Goal();
+            goal.GoalType = GoalType;
+            goal.Quantity = Quantity;
+            goal.Frequency = Frequency;
+            goal.Duration = Duration;
+
+            goal.StepsCompleted = 0;
+            goal.TotalSteps = CalculateTotalSteps();
+
+            return goal;
+        }
 
 		private int CalculateTotalSteps()
 		{

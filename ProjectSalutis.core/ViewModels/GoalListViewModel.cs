@@ -44,7 +44,11 @@ namespace ProjectSalutis.core.ViewModels
 			Goals.Clear();
 			foreach (var entry in entries)
 			{
-				Goals.Add(new GoalListWrapper(entry, this));
+                // Add if goal is not completed
+                if (entry.StepsCompleted < entry.TotalSteps)
+                {
+                    Goals.Add(new GoalListWrapper(entry, this));
+                }
 			}
 		}
 

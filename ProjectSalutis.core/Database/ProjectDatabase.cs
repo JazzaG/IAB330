@@ -43,11 +43,6 @@ namespace ProjectSalutis.core.Database
             return await InsertJourneyEntry(new JourneyEntry(category, rating));
         }
 
-		public async Task<int> GetNumberOfGoals()
-		{
-			return database.Table<Goal>().ToList().Count;
-		}
-
 		public async Task<IEnumerable<Goal>> GetGoals()
 		{
 			return database.Table<Goal>().Reverse().ToList();

@@ -1,8 +1,10 @@
-﻿using System;
+﻿using SQLite.Net.Attributes;
+using System;
 namespace ProjectSalutis.core.Models
 {
 	public class Goal
 	{
+        [PrimaryKey, AutoIncrement]
 		public int GoalId { get; set; }
 		public string GoalType { get; set; }
 		public string Quantity { get; set; }
@@ -12,6 +14,7 @@ namespace ProjectSalutis.core.Models
 		public int StepsCompleted { get; set; }
 		public int TotalSteps { get; set; }
 
+        [Ignore]
 		public string QuantityView
 		{
 			get
@@ -28,7 +31,8 @@ namespace ProjectSalutis.core.Models
 			}
 		}
 
-		public string DurationView
+        [Ignore]
+        public string DurationView
 		{
 			get
 			{
@@ -36,7 +40,8 @@ namespace ProjectSalutis.core.Models
 			}
 		}
 
-		public string PercentageView
+        [Ignore]
+        public string PercentageView
 		{
 			get
 			{
@@ -55,18 +60,6 @@ namespace ProjectSalutis.core.Models
 		public Goal()
 		{
 
-		}
-
-		public Goal(int id, string goalType, string quantity, string frequency, string duration, int totalSteps)
-		{
-			this.GoalId = id;
-			this.GoalType = goalType;
-			this.Quantity = quantity;
-			this.Frequency = frequency;
-			this.Duration = duration;
-			this.TotalSteps = totalSteps;
-
-			this.StepsCompleted = 0;
 		}
 
 		public void AddPercentage()
