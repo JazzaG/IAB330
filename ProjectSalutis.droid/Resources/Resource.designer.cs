@@ -259,8 +259,8 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f05000b
 			public const int add_button = 2131034123;
 			
-			// aapt resource value: 0x7f050016
-			public const int button1 = 2131034134;
+			// aapt resource value: 0x7f05000c
+			public const int button1 = 2131034124;
 			
 			// aapt resource value: 0x7f050015
 			public const int buttonContact = 2131034133;
@@ -274,23 +274,20 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f05000a
 			public const int cancel_button = 2131034122;
 			
+			// aapt resource value: 0x7f050016
+			public const int editText1 = 2131034134;
+			
 			// aapt resource value: 0x7f050017
-			public const int editText1 = 2131034135;
+			public const int editText2 = 2131034135;
 			
 			// aapt resource value: 0x7f050018
-			public const int editText2 = 2131034136;
+			public const int editText3 = 2131034136;
 			
 			// aapt resource value: 0x7f050019
-			public const int editText3 = 2131034137;
+			public const int editText4 = 2131034137;
 			
 			// aapt resource value: 0x7f05001a
-			public const int editText4 = 2131034138;
-			
-			// aapt resource value: 0x7f05001b
-			public const int editText5 = 2131034139;
-			
-			// aapt resource value: 0x7f05000c
-			public const int fab = 2131034124;
+			public const int editText5 = 2131034138;
 			
 			// aapt resource value: 0x7f050007
 			public const int feeling_scale = 2131034119;

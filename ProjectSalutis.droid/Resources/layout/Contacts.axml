@@ -4,13 +4,12 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <com.refractored.fab.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
+    <Button
+        android:text="Add Entry"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_gravity="bottom|right"
-        android:layout_margin="16dp"
-        android:src="@drawable/ic_action_content_new" />
+        android:id="@+id/button1"
+        local:MvxBind="Click AddJourneyCommand" />
     <MvvmCross.Binding.Droid.Views.MvxListView
         android:minWidth="25px"
         android:minHeight="25px"

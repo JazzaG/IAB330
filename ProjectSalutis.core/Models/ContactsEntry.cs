@@ -10,27 +10,19 @@ namespace ProjectSalutis.core.Models
     {
         public ContactsEntry() { }
 
-        public ContactsEntry(string category, int rating, string notes)
+        public ContactsEntry(string name, string location, int office, int number, string email)
         {
-            Timestamp = DateTime.Now.ToLocalTime();
-            Timestamp_string = Timestamp.ToString(); //required for the time to show as not UTC
-            Category = category;
-            Rating = rating;
-            Notes = notes;
+            Name = name;
+            Location = location;
+            Office = office;
+            Number = number;
+            Email = email;
         }
-
-        public ContactsEntry(string category, int rating)
-        {
-            Timestamp = DateTime.Now.ToLocalTime();
-            Timestamp_string = Timestamp.ToString(); //required for the time to show as not UTC
-            Category = category;
-            Rating = rating;
-        }
-
-        public DateTime Timestamp { get; set; }
-        public string Timestamp_string { get; set; }
-        public string Category { get; set; }
-        public int Rating { get; set; }
-        public string Notes { get; set; }
+        
+        public string Name { get; set; }
+        public string Location { get; set; }
+        public int Office { get; set; }
+        public int Number { get; set; }
+        public string Email { get; set; }
     }
 }
