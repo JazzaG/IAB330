@@ -239,53 +239,50 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f080001
 			public const int MvxBindingTagUnique = 2131230721;
 			
-			// aapt resource value: 0x7f080008
-			public const int add_button = 2131230728;
-			
-			// aapt resource value: 0x7f080010
-			public const int button1 = 2131230736;
-			
 			// aapt resource value: 0x7f080007
-			public const int cancel_button = 2131230727;
-			
-			// aapt resource value: 0x7f080009
-			public const int contact_information_delete_btn = 2131230729;
-			
-			// aapt resource value: 0x7f080004
-			public const int feeling_scale = 2131230724;
-			
-			// aapt resource value: 0x7f080005
-			public const int feeling_seekbar = 2131230725;
+			public const int add_button = 2131230727;
 			
 			// aapt resource value: 0x7f08000f
-			public const int goalAdd = 2131230735;
+			public const int button1 = 2131230735;
+			
+			// aapt resource value: 0x7f080006
+			public const int cancel_button = 2131230726;
+			
+			// aapt resource value: 0x7f080008
+			public const int contact_information_delete_btn = 2131230728;
+			
+			// aapt resource value: 0x7f080003
+			public const int feeling_scale = 2131230723;
+			
+			// aapt resource value: 0x7f080004
+			public const int feeling_seekbar = 2131230724;
 			
 			// aapt resource value: 0x7f08000e
-			public const int goalDuration = 2131230734;
+			public const int goalAdd = 2131230734;
 			
 			// aapt resource value: 0x7f08000d
-			public const int goalFrequency = 2131230733;
+			public const int goalDuration = 2131230733;
 			
 			// aapt resource value: 0x7f08000c
-			public const int goalQuantifier = 2131230732;
+			public const int goalFrequency = 2131230732;
 			
 			// aapt resource value: 0x7f08000b
-			public const int goalQuantity = 2131230731;
+			public const int goalQuantifier = 2131230731;
 			
 			// aapt resource value: 0x7f08000a
-			public const int goalType = 2131230730;
+			public const int goalQuantity = 2131230730;
+			
+			// aapt resource value: 0x7f080009
+			public const int goalType = 2131230729;
 			
 			// aapt resource value: 0x7f080002
 			public const int journey_spinner = 2131230722;
 			
-			// aapt resource value: 0x7f080006
-			public const int notes_edittext = 2131230726;
+			// aapt resource value: 0x7f080005
+			public const int notes_edittext = 2131230725;
 			
-			// aapt resource value: 0x7f080011
-			public const int plot = 2131230737;
-			
-			// aapt resource value: 0x7f080003
-			public const int textView1 = 2131230723;
+			// aapt resource value: 0x7f080010
+			public const int plot = 2131230736;
 			
 			static Id()
 			{
