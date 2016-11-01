@@ -15,7 +15,7 @@ namespace ProjectSalutis.droid.Views
 {
 	[Activity(
 		Label = "New Goal"
-		, ParentActivity = typeof(GoalListView)
+		, ParentActivity = typeof(GoalView)
 		, ScreenOrientation = ScreenOrientation.Portrait)]
 	public class CreateGoalView : MvxActivity
 	{
@@ -52,9 +52,9 @@ namespace ProjectSalutis.droid.Views
 		{
 			// Build PendingIntent to take user to goal list screen
 			// Thanks http://stackoverflow.com/a/18408355
-			var requestToGoalListScreen = MvxViewModelRequest<GoalListViewModel>.GetDefaultRequest();
+			var requestToGoalScreen = MvxViewModelRequest<GoalViewModel>.GetDefaultRequest();
 			var androidViewModelRequestTranslator = Mvx.Resolve<IMvxAndroidViewModelRequestTranslator>();
-			var intent = androidViewModelRequestTranslator.GetIntentFor(requestToGoalListScreen);
+			var intent = androidViewModelRequestTranslator.GetIntentFor(requestToGoalScreen);
 			var pendingIntent = PendingIntent.GetActivity(this, 0, intent, 0);
 
 			// Build the notification

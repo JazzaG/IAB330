@@ -47,7 +47,7 @@ namespace ProjectSalutis.droid.Views
                 .SetCancelable(false)
 				.SetNegativeButton("Not now", (sender, e) =>
 				{
-                    viewModel.GoToGoalListScreen();
+                    viewModel.GoToGoalScreen();
 				})
 				.SetPositiveButton("Sure", (sender, e) =>
 				{

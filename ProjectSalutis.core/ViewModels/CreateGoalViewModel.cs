@@ -96,7 +96,7 @@ namespace ProjectSalutis.core.ViewModels
 			RaisePropertyChanged(() => AddButtonClicked);
 
 			// Navigation to goal list view
-			ShowViewModel<GoalListViewModel>();
+			ShowViewModel<GoalViewModel>();
 		}
 
         private Goal CreateGoalInstance()

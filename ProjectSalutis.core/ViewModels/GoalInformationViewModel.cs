@@ -75,7 +75,7 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			database.DeleteGoal(Goal);
 			RaisePropertyChanged(() => GoalDeleted);
-			ShowViewModel<GoalListViewModel>();
+			ShowViewModel<GoalViewModel>();
 		}
 
 		public void GoToAddJourneyEntry()
@@ -83,9 +83,9 @@ namespace ProjectSalutis.core.ViewModels
 			ShowViewModel<AddtoJourneyViewModel>();
 		}
 
-        public void GoToGoalListScreen()
+        public void GoToGoalScreen()
         {
-            ShowViewModel<GoalListViewModel>();
+            ShowViewModel<GoalViewModel>();
         }
 
 	}
