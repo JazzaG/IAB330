@@ -47,11 +47,8 @@ namespace ProjectSalutis.core.Models
 			{
 				double percentage = (double) StepsCompleted / TotalSteps * 100;
 
-				string val = percentage + "";
-				if (val.Contains("."))
-				{
-					val = val.Split('.')[0];
-				}
+                // Show percentage to 1 decimal place
+				string val = String.Format("{0:0.0}", percentage);
 
 				return val + "%";
 			}
