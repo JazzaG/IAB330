@@ -26,6 +26,7 @@ namespace ProjectSalutis.core.ViewModels
 				return new List<string>() 
 				{ 
 					"Bike Ride",
+                    "Drink Water",
 					"Run / Walk / Jog",
 					"Swim",
 					"Pilates",
