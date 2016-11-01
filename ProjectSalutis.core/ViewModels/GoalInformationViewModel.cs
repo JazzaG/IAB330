@@ -82,5 +82,11 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			ShowViewModel<AddtoJourneyViewModel>();
 		}
+
+        public void GoToGoalListScreen()
+        {
+            ShowViewModel<GoalListViewModel>();
+        }
+
 	}
 }

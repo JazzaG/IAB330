@@ -44,9 +44,10 @@ namespace ProjectSalutis.droid.Views
 			builder
 				.SetTitle("Congratulations!")
 				.SetMessage("Well done on completing a goal. Would you like to add a journey entry?")
+                .SetCancelable(false)
 				.SetNegativeButton("Not now", (sender, e) =>
 				{
-				
+                    viewModel.GoToGoalListScreen();
 				})
 				.SetPositiveButton("Sure", (sender, e) =>
 				{
