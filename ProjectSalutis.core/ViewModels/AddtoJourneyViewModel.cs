@@ -43,18 +43,35 @@ namespace ProjectSalutis.core.ViewModels
             }
         }
 
+        private string notesText;
+        public string NotesText
+        {
+            get
+            {
+                return notesText;
+            }
+            set
+            {
+                SetProperty(ref notesText, value);
+            }
+        }
+
         public ICommand CancelJourneyCommand { get; private set; }
         public ICommand AddJourneyCommand { get; private set; }
         public AddtoJourneyViewModel(IProjectDatabase journeyDatabase)
         {
             this.journeyDatabase = journeyDatabase;
             CancelJourneyCommand = new MvxCommand(() => Close(this));
-            AddJourneyCommand = new MvxCommand(() => AddEntry(CategorySelection, SliderValue));
+            if (NotesText == "" || NotesText == null)
+            {
+                NotesText = "No Notes";
+            }
+            AddJourneyCommand = new MvxCommand(() => AddEntry(CategorySelection, SliderValue, NotesText));
         }
 
-        public async void AddEntry(string category, int rating)
+        public async void AddEntry(string category, int rating, string notes)
         {
-            await journeyDatabase.InsertJourneyEntry(category, rating);
+            await journeyDatabase.InsertJourneyEntry(category, rating, notes);
             Close(this);
         }
 
