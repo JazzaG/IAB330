@@ -1,16 +1,16 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <style name="Theme.App" parent="@android:style/Theme.Material.Light">
-    <item name="android:actionBarStyle">@style/Theme.App.ActionBarTheme</item>
-  </style>
+    <style name="Theme.App" parent="@android:style/Theme.Material.Light">
 
-  <style name="Theme.App.ActionBarTheme" parent="@android:style/Widget.Material.Light.ActionBar">
-    <item name="android:background">#F16676</item>
-	<item name="android:titleTextStyle">@style/Theme.App.ActionBar.Title</item>
-  </style>
-
-  <style name="Theme.App.ActionBar.Title" parent="@android:style/TextAppearance.Material.Widget.ActionBar.Title">
-  	<item name="android:textColor">#00235D</item>
-  </style>	
+        <!-- ActionBar background -->
+        <item name="android:colorPrimary">#F16676</item>
+        
+        <!-- Accent color -->
+        <item name="android:colorAccent">#00235D</item>
+        
+        <!-- Title text color -->
+        <item name="android:textColorPrimary">#00235D</item>
+      
+    </style>
 	
 </resources>
