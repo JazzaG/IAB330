@@ -40,6 +40,7 @@
     <Compile Include="ViewModels\CompletedGoalsViewModel.cs" />
     <Compile Include="ViewModels\ContactInformationViewModel.cs" />
     <Compile Include="ViewModels\ContactListViewModel.cs" />
+    <Compile Include="ViewModels\GoalViewModel.cs" />
     <Compile Include="ViewModels\JourneyListViewModel.cs" />
     <Compile Include="ViewModels\NavigationViewModel.cs" />
     <Compile Include="Models\JourneyEntry.cs" />

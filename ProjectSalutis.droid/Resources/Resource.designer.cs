@@ -328,25 +328,28 @@ namespace ProjectSalutis.droid
 			public const int GoalListView = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int JourneyEntryLayout = 2130903050;
+			public const int GoalView = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int JourneyGraphView = 2130903051;
+			public const int JourneyEntryLayout = 2130903051;
 			
 			// aapt resource value: 0x7f03000c
-			public const int JourneyListView = 2130903052;
+			public const int JourneyGraphView = 2130903052;
 			
 			// aapt resource value: 0x7f03000d
-			public const int JourneyView = 2130903053;
+			public const int JourneyListView = 2130903053;
 			
 			// aapt resource value: 0x7f03000e
-			public const int NavigationView = 2130903054;
+			public const int JourneyView = 2130903054;
 			
 			// aapt resource value: 0x7f03000f
-			public const int NewContactView = 2130903055;
+			public const int NavigationView = 2130903055;
 			
 			// aapt resource value: 0x7f030010
-			public const int SplashScreen = 2130903056;
+			public const int NewContactView = 2130903056;
+			
+			// aapt resource value: 0x7f030011
+			public const int SplashScreen = 2130903057;
 			
 			static Layout()
 			{
