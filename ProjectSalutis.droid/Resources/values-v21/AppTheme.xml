@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.App" parent="@android:style/Theme.Material.Light">
+
+        <!-- ActionBar background -->
+        <item name="android:colorPrimary">#F16676</item>
+
+        <!-- Accent color -->
+        <item name="android:colorAccent">#00235D</item>
+
+        <!-- Title text color -->
+        <item name="android:textColorPrimary">#00235D</item>
+
+    </style>
+
+</resources>

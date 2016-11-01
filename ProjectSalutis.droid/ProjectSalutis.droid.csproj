@@ -167,6 +167,7 @@
     <AndroidResource Include="Resources\drawable\very_dissatisfied.png" />
     <AndroidResource Include="Resources\drawable\very_satisfied.png" />
     <AndroidResource Include="Resources\drawable\icon.png" />
+    <AndroidResource Include="Resources\values-v21\AppTheme.xml" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <ItemGroup>
