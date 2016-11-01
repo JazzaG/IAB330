@@ -7,7 +7,8 @@ using ProjectSalutis.core.ViewModels;
 
 namespace ProjectSalutis.droid.Views
 {
-    [Activity(Label = "View for JourneyViewModel")]
+    [Activity(Label = "Journey",
+        ParentActivity = typeof(NavigationView))]
     public class JourneyView : MvxTabActivity
     {
         protected JourneyViewModel JourneyViewModel

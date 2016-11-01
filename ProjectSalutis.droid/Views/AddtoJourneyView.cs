@@ -6,7 +6,8 @@ using System;
 
 namespace ProjectSalutis.droid.Views
 {
-    [Activity(Label = "Add to Journey")]
+    [Activity(Label = "Add to Journey",
+        ParentActivity = typeof(JourneyView))]
     public class AddtoJourneyView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)
