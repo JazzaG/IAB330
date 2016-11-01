@@ -5,34 +5,76 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:padding="20dp">
-    <Mvx.MvxSpinner
-        android:id="@+id/journey_spinner"
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="ItemsSource EntryCategories; SelectedItem CategorySelection" />
-    <TextView
-        android:textAppearance="?android:attr/textAppearanceMedium"
+
+    <android.support.v7.widget.CardView
+        local:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:padding="15dp">
+            <TextView
+                android:text="Type"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_gravity="center_vertical" />
+            <Mvx.MvxSpinner
+                    android:id="@+id/journey_spinner"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    local:MvxBind="ItemsSource EntryCategories; SelectedItem CategorySelection" />
+        </LinearLayout>
+               
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        local:cardUseCompatPadding="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="15dp">
+            <ImageView
+                android:src="@drawable/scale"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/feeling_scale" />
+            <SeekBar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                local:MvxBind="Progress SliderValue"
+                android:max="4"
+                android:id="@+id/feeling_seekbar" />
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        local:cardUseCompatPadding="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/textView1"
-        android:text="How are you feeling?" />
-    <ImageView
-        android:src="@drawable/scale"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/feeling_scale" />
-    <SeekBar
-        android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
-        local:MvxBind="Progress SliderValue"
-        android:max="4"
-        android:id="@+id/feeling_seekbar" />
-    <EditText
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/notes_edittext"
-        android:hint="Notes (optional)"
-        local:MvxBind="Text NotesText" />
+        android:padding="15dp"
+        android:orientation="vertical">
+        
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/notes_edittext"
+            android:hint="Notes (optional)"
+            local:MvxBind="Text NotesText" />
+
+    </android.support.v7.widget.CardView>
+       
+    
     <LinearLayout
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
