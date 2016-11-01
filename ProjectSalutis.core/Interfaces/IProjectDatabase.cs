@@ -15,5 +15,9 @@ namespace ProjectSalutis.core.Interfaces
 		Task<int> DeleteGoal(Goal goal);
 		Task<int> InsertGoal(Goal goal);
 		Task<int> UpdateGoal(Goal goal);
+
+        Task<IEnumerable<Contact>> GetContacts();
+        Task<int> InsertContact(Contact contact);
+        Task<int> DeleteContact(Contact contact);
     }
 }

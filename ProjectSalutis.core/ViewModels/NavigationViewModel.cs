@@ -27,7 +27,7 @@ namespace ProjectSalutis.core.ViewModels
 		{
 			get
 			{
-				return new MvxCommand(() => ShowViewModel<NewContactViewModel>());
+				return new MvxCommand(() => ShowViewModel<ContactListViewModel>());
 			}
 		}
 

@@ -224,35 +224,23 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f080008
 			public const int add_button = 2131230728;
 			
-			// aapt resource value: 0x7f08000f
-			public const int button1 = 2131230735;
+			// aapt resource value: 0x7f080010
+			public const int button1 = 2131230736;
 			
-			// aapt resource value: 0x7f080013
-			public const int buttonContact = 2131230739;
-			
-			// aapt resource value: 0x7f080011
-			public const int buttonGoal = 2131230737;
+			// aapt resource value: 0x7f080014
+			public const int buttonContact = 2131230740;
 			
 			// aapt resource value: 0x7f080012
-			public const int buttonJourney = 2131230738;
+			public const int buttonGoal = 2131230738;
+			
+			// aapt resource value: 0x7f080013
+			public const int buttonJourney = 2131230739;
 			
 			// aapt resource value: 0x7f080007
 			public const int cancel_button = 2131230727;
 			
-			// aapt resource value: 0x7f080014
-			public const int editText1 = 2131230740;
-			
-			// aapt resource value: 0x7f080015
-			public const int editText2 = 2131230741;
-			
-			// aapt resource value: 0x7f080016
-			public const int editText3 = 2131230742;
-			
-			// aapt resource value: 0x7f080017
-			public const int editText4 = 2131230743;
-			
-			// aapt resource value: 0x7f080018
-			public const int editText5 = 2131230744;
+			// aapt resource value: 0x7f080009
+			public const int contact_information_delete_btn = 2131230729;
 			
 			// aapt resource value: 0x7f080004
 			public const int feeling_scale = 2131230724;
@@ -260,23 +248,23 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f080005
 			public const int feeling_seekbar = 2131230725;
 			
+			// aapt resource value: 0x7f08000f
+			public const int goalAdd = 2131230735;
+			
 			// aapt resource value: 0x7f08000e
-			public const int goalAdd = 2131230734;
+			public const int goalDuration = 2131230734;
 			
 			// aapt resource value: 0x7f08000d
-			public const int goalDuration = 2131230733;
+			public const int goalFrequency = 2131230733;
 			
 			// aapt resource value: 0x7f08000c
-			public const int goalFrequency = 2131230732;
+			public const int goalQuantifier = 2131230732;
 			
 			// aapt resource value: 0x7f08000b
-			public const int goalQuantifier = 2131230731;
+			public const int goalQuantity = 2131230731;
 			
 			// aapt resource value: 0x7f08000a
-			public const int goalQuantity = 2131230730;
-			
-			// aapt resource value: 0x7f080009
-			public const int goalType = 2131230729;
+			public const int goalType = 2131230730;
 			
 			// aapt resource value: 0x7f080002
 			public const int journey_spinner = 2131230722;
@@ -284,8 +272,8 @@ namespace ProjectSalutis.droid
 			// aapt resource value: 0x7f080006
 			public const int notes_edittext = 2131230726;
 			
-			// aapt resource value: 0x7f080010
-			public const int plot = 2131230736;
+			// aapt resource value: 0x7f080011
+			public const int plot = 2131230737;
 			
 			// aapt resource value: 0x7f080003
 			public const int textView1 = 2131230723;
@@ -307,37 +295,46 @@ namespace ProjectSalutis.droid
 			public const int AddtoJourneyView = 2130903040;
 			
 			// aapt resource value: 0x7f030001
-			public const int CreateGoalView = 2130903041;
+			public const int ContactInformationView = 2130903041;
 			
 			// aapt resource value: 0x7f030002
-			public const int GoalInformationView = 2130903042;
+			public const int ContactListLayout = 2130903042;
 			
 			// aapt resource value: 0x7f030003
-			public const int GoalListLayout = 2130903043;
+			public const int ContactListView = 2130903043;
 			
 			// aapt resource value: 0x7f030004
-			public const int GoalListView = 2130903044;
+			public const int CreateGoalView = 2130903044;
 			
 			// aapt resource value: 0x7f030005
-			public const int JourneyEntryLayout = 2130903045;
+			public const int GoalInformationView = 2130903045;
 			
 			// aapt resource value: 0x7f030006
-			public const int JourneyGraphView = 2130903046;
+			public const int GoalListLayout = 2130903046;
 			
 			// aapt resource value: 0x7f030007
-			public const int JourneyListView = 2130903047;
+			public const int GoalListView = 2130903047;
 			
 			// aapt resource value: 0x7f030008
-			public const int JourneyView = 2130903048;
+			public const int JourneyEntryLayout = 2130903048;
 			
 			// aapt resource value: 0x7f030009
-			public const int NavigationView = 2130903049;
+			public const int JourneyGraphView = 2130903049;
 			
 			// aapt resource value: 0x7f03000a
-			public const int NewContactView = 2130903050;
+			public const int JourneyListView = 2130903050;
 			
 			// aapt resource value: 0x7f03000b
-			public const int SplashScreen = 2130903051;
+			public const int JourneyView = 2130903051;
+			
+			// aapt resource value: 0x7f03000c
+			public const int NavigationView = 2130903052;
+			
+			// aapt resource value: 0x7f03000d
+			public const int NewContactView = 2130903053;
+			
+			// aapt resource value: 0x7f03000e
+			public const int SplashScreen = 2130903054;
 			
 			static Layout()
 			{

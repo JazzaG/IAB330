@@ -14,7 +14,7 @@ using MvvmCross.Droid.Views;
 namespace ProjectSalutis.droid.Views
 {
 	[Activity(Label = "Add New Contact"
-	          , ParentActivity = typeof(NavigationView))]
+	          , ParentActivity = typeof(ContactListView))]
     class NewContactView : MvxActivity
     {
 

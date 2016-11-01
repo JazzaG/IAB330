@@ -92,6 +92,8 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
+    <Compile Include="Views\ContactInformationView.cs" />
+    <Compile Include="Views\ContactListView.cs" />
     <Compile Include="Views\JourneyListView.cs" />
     <Compile Include="Views\NavigationView.cs" />
     <Compile Include="Views\JourneyGraphView.cs" />
@@ -134,6 +136,9 @@
     <AndroidResource Include="Resources\layout\GoalInformationView.axml" />
     <AndroidResource Include="Resources\values\AppTheme.xml" />
     <AndroidResource Include="Resources\drawable\ic_notification.png" />
+    <AndroidResource Include="Resources\layout\ContactListView.axml" />
+    <AndroidResource Include="Resources\layout\ContactListLayout.axml" />
+    <AndroidResource Include="Resources\layout\ContactInformationView.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

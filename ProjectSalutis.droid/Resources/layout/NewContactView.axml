@@ -20,31 +20,31 @@
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText1"
+                local:MvxBind="Text Contact.Name"
                 android:hint="Name" />
             <EditText
                 android:inputType="textPostalAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText2"
+                local:MvxBind="Text Contact.Location"
                 android:hint="Location"/>
             <EditText
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText3"
-                android:hint="Office Number" />
+                local:MvxBind="Text Contact.OfficePhone"
+                android:hint="Office Phone" />
             <EditText
                 android:inputType="number"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText4"
-                android:hint="Personal Number" />
+                local:MvxBind="Text Contact.PersonalPhone"
+                android:hint="Personal Phone" />
             <EditText
                 android:inputType="textEmailAddress"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:id="@+id/editText5"
+                local:MvxBind="Text Contact.Email"
                 android:hint="Email" />
         </LinearLayout>
         
@@ -55,5 +55,5 @@
         android:text="Add Contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/button1" />
+        local:MvxBind="Click AddButtonClickCommand" />
 </LinearLayout>

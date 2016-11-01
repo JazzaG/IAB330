@@ -19,6 +19,7 @@ namespace ProjectSalutis.core.Database
             database = sqlite.GetConnection();
             database.CreateTable<JourneyEntry>();
 			database.CreateTable<Goal>();
+            database.CreateTable<Contact>();
         }
 
         public async Task<IEnumerable<JourneyEntry>> GetJourneyEntries()
@@ -69,5 +70,25 @@ namespace ProjectSalutis.core.Database
 			return num;
 		}
 
-	}
+
+        public async Task<IEnumerable<Contact>> GetContacts()
+        {
+            return database.Table<Contact>().Reverse().ToList();
+        }
+
+        public async Task<int> InsertContact(Contact contact)
+        {
+            var num = database.Insert(contact);
+            database.Commit();
+            return num;
+        }
+
+        public async Task<int> DeleteContact(Contact contact)
+        {
+            var num = database.Delete(contact);
+            database.Commit();
+            return num;
+        }
+
+    }
 }

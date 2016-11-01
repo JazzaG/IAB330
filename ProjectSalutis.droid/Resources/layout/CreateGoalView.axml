@@ -43,7 +43,7 @@
                         android:layout_height="wrap_content"
                         android:layout_weight="4"
                         android:id="@+id/goalQuantity"
-						local:MvxBind="Text Quantity"
+                        local:MvxBind="Text Quantity"
                         android:numeric="integer"
                         android:inputType="number"
                         android:password="false"
