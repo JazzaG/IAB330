@@ -68,6 +68,9 @@ namespace ProjectSalutis.droid.Views
 			// Show the notification
 			NotificationManager manager = (NotificationManager)GetSystemService(Context.NotificationService);
 			manager.Notify(1000, builder.Build());
+
+            // Finish the activity
+            Finish();
 		}
 
 	}
