@@ -31,7 +31,7 @@ namespace ProjectSalutis.core.ViewModels
             }
         }
 
-        private int sliderValue;
+        private int sliderValue = 2;
         public int SliderValue
         {
             get {
