@@ -37,6 +37,7 @@
     <Compile Include="Models\ContactListWrapper.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ViewModels\AddtoJourneyViewModel.cs" />
+    <Compile Include="ViewModels\CompletedGoalsViewModel.cs" />
     <Compile Include="ViewModels\ContactInformationViewModel.cs" />
     <Compile Include="ViewModels\ContactListViewModel.cs" />
     <Compile Include="ViewModels\JourneyListViewModel.cs" />

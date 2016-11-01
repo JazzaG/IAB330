@@ -31,5 +31,13 @@ namespace ProjectSalutis.core.ViewModels
 			}
 		}
 
+        public ICommand CompletedGoalsCommand
+        {
+            get
+            {
+                return new MvxCommand(() => ShowViewModel<CompletedGoalsViewModel>());
+            }
+        }
+
     }
 }

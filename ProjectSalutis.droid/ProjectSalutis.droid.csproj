@@ -92,6 +92,7 @@
     <Compile Include="Setup.cs" />
     <Compile Include="SplashScreen.cs" />
     <Compile Include="Views\AddtoJourneyView.cs" />
+    <Compile Include="Views\CompletedGoalsView.cs" />
     <Compile Include="Views\ContactInformationView.cs" />
     <Compile Include="Views\ContactListView.cs" />
     <Compile Include="Views\JourneyListView.cs" />
@@ -139,6 +140,8 @@
     <AndroidResource Include="Resources\layout\ContactListView.axml" />
     <AndroidResource Include="Resources\layout\ContactListLayout.axml" />
     <AndroidResource Include="Resources\layout\ContactInformationView.axml" />
+    <AndroidResource Include="Resources\layout\CompletedGoalsView.axml" />
+    <AndroidResource Include="Resources\layout\CompletedGoalsLayout.axml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\mipmap-hdpi\" />

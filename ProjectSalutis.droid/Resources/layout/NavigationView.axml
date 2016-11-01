@@ -12,18 +12,21 @@
         android:text="Goals"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonGoal"
         local:MvxBind="Click GoalCommand" />
     <Button
         android:text="Journey"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonJourney"
         local:MvxBind="Click JourneyCommand" />
     <Button
         android:text="Contact"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/buttonContact"
         local:MvxBind="Click ContactCommand" />
+    <Button
+        android:text="Completed Goals"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        local:MvxBind="Click CompletedGoalsCommand"
+        android:layout_marginTop="30dp" />
 </LinearLayout>
