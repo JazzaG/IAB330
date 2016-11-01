@@ -39,9 +39,9 @@ namespace ProjectSalutis.core.Database
             return num;
         }
 
-        public async Task<int> InsertJourneyEntry(string category, int rating)
+        public async Task<int> InsertJourneyEntry(string category, int rating, string notes)
         {
-            return await InsertJourneyEntry(new JourneyEntry(category, rating));
+            return await InsertJourneyEntry(new JourneyEntry(category, rating, notes));
         }
 
 		public async Task<IEnumerable<Goal>> GetGoals()

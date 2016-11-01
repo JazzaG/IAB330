@@ -108,7 +108,9 @@
     <None Include="app.config" />
     <None Include="packages.config" />
     <None Include="Resources\AboutResources.txt" />
-    <None Include="Properties\AndroidManifest.xml" />
+    <None Include="Properties\AndroidManifest.xml">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Assets\AboutAssets.txt" />
     <AndroidResource Include="Resources\layout\SplashScreen.axml" />
     <AndroidResource Include="Resources\layout\NavigationView.axml">
@@ -157,6 +159,12 @@
     <AndroidResource Include="Resources\values\SplashStyle.xml" />
     <AndroidResource Include="Resources\drawable\splash.png" />
     <AndroidResource Include="Resources\drawable\scale.png" />
+    <AndroidResource Include="Resources\drawable\dissatisfied.png" />
+    <AndroidResource Include="Resources\drawable\neutral.png" />
+    <AndroidResource Include="Resources\drawable\satisfied.png" />
+    <AndroidResource Include="Resources\drawable\very_dissatisfied.png" />
+    <AndroidResource Include="Resources\drawable\very_satisfied.png" />
+    <AndroidResource Include="Resources\drawable\icon.png" />
     <Content Include="ToDo-MvvmCross\_ Droid UI.txt" />
   </ItemGroup>
   <ItemGroup>

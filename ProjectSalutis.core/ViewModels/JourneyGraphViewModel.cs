@@ -20,9 +20,10 @@ namespace ProjectSalutis.core.ViewModels
         public JourneyGraphViewModel(IProjectDatabase projectDatabase)
         {
             this.projectDatabase = projectDatabase;
-            PlotModel = new PlotModel();
-            PlotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd MMM yy", AxislineColor = OxyColors.White, TextColor = OxyColors.White });
-            PlotModel.Axes.Add(new LinearAxis { Position = AxisPosition.Left, Minimum = -0.5, Maximum = 10.5, AxislineColor = OxyColors.White, TextColor = OxyColors.White, IsZoomEnabled = false, IsPanEnabled = false });
+            PlotModel = new PlotModel() { LegendBackground = OxyColor.FromAColor(200, OxyColors.White), LegendBorder = OxyColors.Black };
+            PlotModel.PlotAreaBorderColor = OxyColors.Transparent;
+            PlotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd MMM yy" });
+            PlotModel.Axes.Add(new LinearAxis { AxislineStyle = LineStyle.None, Position = AxisPosition.Left, IsAxisVisible = false, Minimum = -0.5, Maximum = 4.5, MajorStep = 1, MinorStep = 1,  IsZoomEnabled = false, IsPanEnabled = false });
         }
 
         public void OnResume()
@@ -36,15 +37,17 @@ namespace ProjectSalutis.core.ViewModels
 
             var s1 = new LineSeries()
             {
+                Title = "Happiness",
                 Color = OxyColors.Red,
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,
                 MarkerStroke = OxyColors.DarkRed,
-                MarkerFill = OxyColors.PaleVioletRed,
+                MarkerFill = OxyColors.IndianRed,
                 MarkerStrokeThickness = 1.5
             };
             var s2 = new LineSeries()
             {
+                Title = "Exercise",
                 Color = OxyColors.Blue,
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,
@@ -54,6 +57,7 @@ namespace ProjectSalutis.core.ViewModels
             };
             var s3 = new LineSeries()
             {
+                Title = "Nutrition",
                 Color = OxyColors.Green,
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,

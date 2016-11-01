@@ -9,7 +9,7 @@ namespace ProjectSalutis.core.Interfaces
         Task<IEnumerable<JourneyEntry>> GetJourneyEntries();
         Task<int> DeleteJourneyEntry(object id);
         Task<int> InsertJourneyEntry(JourneyEntry entry);
-        Task<int> InsertJourneyEntry(string category, int rating);
+        Task<int> InsertJourneyEntry(string category, int rating, string notes);
 
 		Task<IEnumerable<Goal>> GetGoals();
 		Task<int> DeleteGoal(Goal goal);
