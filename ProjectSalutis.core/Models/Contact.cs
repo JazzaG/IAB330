@@ -18,6 +18,25 @@ namespace ProjectSalutis.core.Models
         public string PersonalPhone { get; set; }
         public string Email { get; set; }
 
+        [Ignore]
+        public string OfficePhoneView
+        {
+            get
+            {
+                return "(W) " + OfficePhone;
+            }
+        }
+
+        [Ignore]
+        public string PersonalPhoneView
+        {
+            get
+            {
+                return "(P) " + PersonalPhone;
+            }
+        }
+
+
         public Contact()
         {
 

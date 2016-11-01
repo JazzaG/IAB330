@@ -68,13 +68,13 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="(01) 2345 6789"
-                    local:MvxBind="Text Contact.OfficePhone"
+                    local:MvxBind="Text Contact.OfficePhoneView"
                     android:layout_weight="1" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="0412345678"
-                    local:MvxBind="Text Contact.PersonalPhone"
+                    local:MvxBind="Text Contact.PersonalPhoneView"
                     android:layout_weight="1" />
                 <TextView
                     android:layout_width="match_parent"
