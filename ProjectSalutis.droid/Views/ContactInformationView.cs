@@ -58,10 +58,19 @@ namespace ProjectSalutis.droid.Views
 
         private void SendCallIntent(string number)
         {
-            Android.Net.Uri uri = Android.Net.Uri.Parse(String.Format("tel:{0}", number));
-            Intent callIntent = new Intent(Intent.ActionCall, uri);
+            Intent intent;
 
-            StartActivity(callIntent);
+            // If there is a number, call it. If not open dialer
+            if (number != null && !number.Equals(""))
+            {
+                Android.Net.Uri uri = Android.Net.Uri.Parse(String.Format("tel:{0}", number));
+                intent = new Intent(Intent.ActionCall, uri);
+            } else
+            {
+                intent = new Intent(Intent.ActionDial);
+            }
+
+            StartActivity(intent);
         }
         
 
