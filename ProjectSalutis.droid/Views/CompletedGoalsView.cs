@@ -11,12 +11,14 @@ using Android.Views;
 using Android.Widget;
 using MvvmCross.Droid.Views;
 using ProjectSalutis.core.ViewModels;
+using Android.Content.PM;
 
 namespace ProjectSalutis.droid.Views
 {
 
     [Activity(
         Label = "Completed Goals"
+        , ScreenOrientation = ScreenOrientation.Portrait
         , ParentActivity = typeof(NavigationView))]
     public class CompletedGoalsView : MvxActivity
     {

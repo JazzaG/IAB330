@@ -5,11 +5,13 @@ using Android.Widget;
 using MvvmCross.Core.ViewModels;
 using MvvmCross.Droid.Views;
 using ProjectSalutis.core.ViewModels;
+using Android.Content.PM;
 
 namespace ProjectSalutis.droid.Views
 {
 	[Activity(Label = "Your Goal"
-	          , ParentActivity = typeof(GoalListView))]
+              , ScreenOrientation = ScreenOrientation.Portrait
+              , ParentActivity = typeof(GoalListView))]
 	public class GoalInformationView : MvxActivity
 	{
 		protected override void OnCreate(Bundle bundle)

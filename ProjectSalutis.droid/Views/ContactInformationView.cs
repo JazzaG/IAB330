@@ -12,11 +12,13 @@ using Android.Widget;
 using MvvmCross.Droid.Views;
 using ProjectSalutis.core.Models;
 using ProjectSalutis.core.ViewModels;
+using Android.Content.PM;
 
 namespace ProjectSalutis.droid.Views
 {
     [Activity(
         Label = "Your Contact"
+        , ScreenOrientation = ScreenOrientation.Portrait
         , ParentActivity = typeof(ContactListView))]
     public class ContactInformationView : MvxActivity
     {

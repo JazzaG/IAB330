@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
 using MvvmCross.Droid.Views;
@@ -7,7 +8,8 @@ using ProjectSalutis.core.ViewModels;
 
 namespace ProjectSalutis.droid.Views
 {
-    [Activity(Label = "View for JourneyListViewModel")]
+    [Activity(Label = "View for JourneyListViewModel",
+        ScreenOrientation = ScreenOrientation.Portrait)]
     public class JourneyListView : MvxActivity
     {
         protected override void OnCreate(Bundle bundle)

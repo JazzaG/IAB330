@@ -1,5 +1,6 @@
 using Android.App;
 using Android.Content;
+using Android.Content.PM;
 using Android.OS;
 using Android.Widget;
 using MvvmCross.Droid.Views;
@@ -8,7 +9,8 @@ using ProjectSalutis.core.ViewModels;
 namespace ProjectSalutis.droid.Views
 {
     [Activity(Label = "Journey",
-        ParentActivity = typeof(NavigationView))]
+        ParentActivity = typeof(NavigationView),
+        ScreenOrientation = ScreenOrientation.Portrait)]
     public class JourneyView : MvxTabActivity
     {
         protected JourneyViewModel JourneyViewModel

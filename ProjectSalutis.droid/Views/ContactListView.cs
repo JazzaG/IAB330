@@ -10,6 +10,7 @@ namespace ProjectSalutis.droid.Views
     [Activity(
         Label = "Contacts"
         , ParentActivity = typeof(NavigationView)
+        , ScreenOrientation = ScreenOrientation.Portrait
         , LaunchMode = LaunchMode.SingleTask)]
     public class ContactListView : MvxActivity
     {
