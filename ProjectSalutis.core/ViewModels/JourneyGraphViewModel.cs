@@ -20,7 +20,7 @@ namespace ProjectSalutis.core.ViewModels
         public JourneyGraphViewModel(IProjectDatabase projectDatabase)
         {
             this.projectDatabase = projectDatabase;
-            PlotModel = new PlotModel() { LegendBackground = OxyColor.FromAColor(200, OxyColors.White), LegendBorder = OxyColors.Black };
+            PlotModel = new PlotModel() { LegendBackground = OxyColor.FromAColor(200, OxyColors.White), LegendBorder = OxyColors.Black, LegendOrientation = LegendOrientation.Horizontal, LegendPosition = LegendPosition.TopCenter, LegendPlacement = LegendPlacement.Outside};
             PlotModel.PlotAreaBorderColor = OxyColors.Transparent;
             PlotModel.Axes.Add(new DateTimeAxis { Position = AxisPosition.Bottom, StringFormat = "dd MMM yy" });
             PlotModel.Axes.Add(new LinearAxis { AxislineStyle = LineStyle.None, Position = AxisPosition.Left, IsAxisVisible = false, Minimum = -0.5, Maximum = 4.5, MajorStep = 1, MinorStep = 1,  IsZoomEnabled = false, IsPanEnabled = false });
