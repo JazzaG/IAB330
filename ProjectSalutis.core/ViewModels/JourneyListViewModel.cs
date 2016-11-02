@@ -17,10 +17,12 @@ namespace ProjectSalutis.core.ViewModels
         }
 
         private readonly IProjectDatabase projectDatabase;
+        private JourneyViewModel parent;
         
-        public JourneyListViewModel(IProjectDatabase projectDatabase)
+        public JourneyListViewModel(IProjectDatabase projectDatabase, JourneyViewModel parent)
         {
             this.projectDatabase = projectDatabase;
+            this.parent = parent;
         }
 
         public void OnResume()
@@ -34,7 +36,10 @@ namespace ProjectSalutis.core.ViewModels
             Entries.Clear();
             foreach (var entry in entries)
             {
-                Entries.Add(entry);
+                if (parent.Filter == "Show All" || parent.Filter == entry.Category)
+                {
+                    Entries.Add(entry);
+                }
             }
         }
     }

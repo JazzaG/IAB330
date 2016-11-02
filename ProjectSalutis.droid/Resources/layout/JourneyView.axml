@@ -4,30 +4,36 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-  <Button
-      android:layout_width="fill_parent"
-      android:layout_height="wrap_content"
-      android:layout_weight="0.05"
-      local:MvxBind="Click AddJourneyCommand"
-      android:text="Add Entry"
-      android:id="@+id/add_button" />
-  <TabHost
-      android:id="@android:id/tabhost"
-      android:layout_width="fill_parent"
-      android:layout_height="0dp"
-      android:layout_weight="0.95">
-    <LinearLayout
-        android:orientation="vertical"
+    <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.01"
+            local:MvxBind="Click AddJourneyCommand"
+            android:text="Add Entry"
+            android:id="@+id/add_button" />
+    <TabHost
+        android:id="@android:id/tabhost"
         android:layout_width="fill_parent"
-        android:layout_height="fill_parent">
-      <TabWidget
-          android:id="@android:id/tabs"
-          android:layout_width="fill_parent"
-          android:layout_height="wrap_content" />
-      <FrameLayout
-          android:id="@android:id/tabcontent"
-          android:layout_width="fill_parent"
-          android:layout_height="fill_parent" />
-    </LinearLayout>
-  </TabHost>
+        android:layout_height="0dp"
+        android:layout_weight="0.98">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+            <TabWidget
+                android:id="@android:id/tabs"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" />
+            <FrameLayout
+                android:id="@android:id/tabcontent"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" />
+        </LinearLayout>
+    </TabHost>
+  <Mvx.MvxSpinner
+            android:id="@+id/journey_spinner"
+            android:layout_weight="0.01"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            local:MvxBind="ItemsSource FilterOptions; SelectedItem Filter" />
 </LinearLayout>

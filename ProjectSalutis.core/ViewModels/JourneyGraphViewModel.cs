@@ -16,10 +16,12 @@ namespace ProjectSalutis.core.ViewModels
         }
 
         private readonly IProjectDatabase projectDatabase;
+        private JourneyViewModel parent;
 
-        public JourneyGraphViewModel(IProjectDatabase projectDatabase)
+        public JourneyGraphViewModel(IProjectDatabase projectDatabase, JourneyViewModel parent)
         {
             this.projectDatabase = projectDatabase;
+            this.parent = parent;
             PlotModel = new PlotModel()
             {
                 //LegendBackground = OxyColor.FromAColor(200, OxyColors.White),
@@ -93,14 +95,14 @@ namespace ProjectSalutis.core.ViewModels
             var entries = await projectDatabase.GetJourneyEntries();
             foreach (var entry in entries)
             {
-                if (entry.Category == "Happiness") {
+                if (entry.Category == "Happiness" && (parent.Filter == "Happiness" || parent.Filter == "Show All")) {
                     s1.Points.Add(new DataPoint(DateTimeAxis.ToDouble(entry.Timestamp), entry.Rating));
                 }
-                else if (entry.Category == "Exercise")
+                else if (entry.Category == "Exercise" && (parent.Filter == "Exercise" || parent.Filter == "Show All"))
                 {
                     s2.Points.Add(new DataPoint(DateTimeAxis.ToDouble(entry.Timestamp), entry.Rating));
                 }
-                else if (entry.Category == "Nutrition")
+                else if (entry.Category == "Nutrition" && (parent.Filter == "Nutrition" || parent.Filter == "Show All"))
                 {
                     s3.Points.Add(new DataPoint(DateTimeAxis.ToDouble(entry.Timestamp), entry.Rating));
                 }
@@ -108,9 +110,18 @@ namespace ProjectSalutis.core.ViewModels
 
             PlotModel.InvalidatePlot(true);
 
-            PlotModel.Series.Add(s1);
-            PlotModel.Series.Add(s2);
-            PlotModel.Series.Add(s3);
+            if (parent.Filter == "Happiness" || parent.Filter == "Show All")
+            {
+                PlotModel.Series.Add(s1);
+            }
+            if (parent.Filter == "Exercise" || parent.Filter == "Show All")
+            {
+                PlotModel.Series.Add(s2);
+            }
+            if (parent.Filter == "Nutrition" || parent.Filter == "Show All")
+            {
+                PlotModel.Series.Add(s3);
+            }
         }
     }
 }
