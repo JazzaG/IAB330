@@ -38,31 +38,31 @@ namespace ProjectSalutis.core.ViewModels
             var s1 = new LineSeries()
             {
                 Title = "Happiness",
-                Color = OxyColors.Red,
+                Color = OxyColor.FromRgb(241, 100, 119),
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,
-                MarkerStroke = OxyColors.DarkRed,
-                MarkerFill = OxyColors.IndianRed,
+                MarkerStroke = OxyColor.FromRgb(241, 100, 119),
+                MarkerFill = OxyColor.FromRgb(241, 100, 119),
                 MarkerStrokeThickness = 1.5
             };
             var s2 = new LineSeries()
             {
                 Title = "Exercise",
-                Color = OxyColors.Blue,
+                Color = OxyColor.FromRgb(247, 150, 34),
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,
-                MarkerStroke = OxyColors.DarkBlue,
-                MarkerFill = OxyColors.LightBlue,
+                MarkerStroke = OxyColor.FromRgb(247, 150, 34),
+                MarkerFill = OxyColor.FromRgb(247, 150, 34),
                 MarkerStrokeThickness = 1.5
             };
             var s3 = new LineSeries()
             {
                 Title = "Nutrition",
-                Color = OxyColors.Green,
+                Color = OxyColor.FromRgb(0, 35, 93),
                 MarkerType = MarkerType.Circle,
                 MarkerSize = 6,
-                MarkerStroke = OxyColors.DarkGreen,
-                MarkerFill = OxyColors.LightGreen,
+                MarkerStroke = OxyColor.FromRgb(0, 35, 93),
+                MarkerFill = OxyColor.FromRgb(0, 35, 93),
                 MarkerStrokeThickness = 1.5
             };
 
